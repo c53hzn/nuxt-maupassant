@@ -1,0 +1,83 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>添加元素平移效果的产品页面 | Jenny的小站</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="date" name="date" content="2018-11-08"><meta data-n-head="ssr" data-hid="description" name="description" content="之前做了不添加任何效果的产品页，这两天看苹果ipad pro的产品页，惊艳到不行，所以自己仿照做一个鼠标滚轮事件触发页面元素平移的版本，不过比较粗糙。"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content="技术,scroll delay,FreeCodeCamp,FCC,Responsive Webpage Design"><link data-n-head="ssr" rel="shortcut icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/font-Noto-Sans-SC.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/style.css?2021-11-15"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/font-awesome/css/font-awesome.min.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/github-markdown.min.css"><base href="/nuxt-maupassant/"><link rel="preload" href="/nuxt-maupassant/_nuxt/af6577942f9b77b78a3f.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/d780c070f2c8433988a2.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/976a7a55bae2b52f71e4.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/f38231e021cbaea972be.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/ecb9288a66b9d5828a8f.js" as="script"><style data-vue-ssr-id="638ca560:0 3191d5ad:0 72520070:0">code[class*=language-],pre[class*=language-]{color:#393a34;font-family:Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;font-size:.9em;line-height:1.2em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre>code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;background-color:#f3f3f3}:not(pre)>code[class*=language-]{padding:1px .2em;background:#f3f3f3;border:1px solid #ddd}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998;font-style:italic}.token.namespace{opacity:.7}.token.attr-value,.token.string{color:#e3116c}.token.operator,.token.punctuation{color:#393a34}.token.boolean,.token.constant,.token.entity,.token.inserted,.token.number,.token.property,.token.regex,.token.symbol,.token.url,.token.variable{color:#36acaa}.language-autohotkey .token.selector,.token.atrule,.token.attr-name,.token.keyword{color:#00a4db}.language-autohotkey .token.tag,.token.deleted,.token.function{color:#9a050f}.language-autohotkey .token.keyword,.token.selector,.token.tag{color:#00009f}.token.bold,.token.function,.token.important{font-weight:700}.token.italic{font-style:italic}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#3b8070;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.nuxt-content{margin-bottom:50px;text-align:justify;word-break:break-all}.nuxt-content h2{margin:9px 0;padding:9px 0}.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:8px 0;padding:0}.nuxt-content h2,.nuxt-content h3{border-bottom:1px solid silver}.nuxt-content h2{font-size:30px}.nuxt-content h3{font-size:26px}.nuxt-content h4{font-size:24px}.nuxt-content h5{font-size:20px}.nuxt-content p{line-height:24px}.nuxt-content ol{padding-right:18px}.nuxt-content li{line-height:24px}.nuxt-content iframe{margin:0 20px}.nuxt-content iframe.youtube{margin:8px auto 8px 20px;width:480px;height:360px;display:block}.nuxt-content blockquote{margin:16px 0;padding:10px;color:#6a737d;background-color:#f8f8f8;border-left:.25em solid #dfe2e5}.nuxt-content a,.toc a,.toc a:active,.toc a:visited{color:#000;font-weight:700;text-decoration:underline;border:none}.nuxt-content a:hover,.toc a:hover{color:grey}li.toc3{list-style:circle;margin-left:15px}a#comment-link{top:0}.blog-desc{margin:10px 0;padding:10px;color:#666;background-color:rgba(0,0,0,.025)}#disqus_thread{margin-top:20px}.prev-next{margin:20px auto;display:flex;justify-content:space-between}.prev-next a{display:block}.next,.prev{max-width:42%;color:grey;cursor:pointer}.prev{text-align:left}.next{text-align:right}.next:hover,.prev:hover{color:#000}.prev-next-arrow{font-size:28px}#comment{margin:40px 0 0;text-align:center}.loadCommentBtn{margin-bottom:20px;cursor:pointer;display:inline-block}.loadCommentBtn:hover{color:grey}@media (max-width:768px){.nuxt-content h2,.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:9px 0}.nuxt-content blockquote{margin:16px 0}.nuxt-content iframe{margin:0}.nuxt-content iframe.youtube{margin:8px auto;width:100%}.nuxt-content ul{padding-left:20px}.nuxt-content pre{margin-left:0;margin-right:0}.next,.prev{margin:0}#comment{margin:40px 0 0}}@media (max-width:539px){.nuxt-content iframe.youtube{height:auto}}</style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="container-main"><nav><div class="nav-wrap"><header><a href="/nuxt-maupassant/" class="no-decor-link nav-home nuxt-link-active">
+        Jenny's Blog
+      </a> <div class="nav-subtitle">
+        多学多想
+      </div></header> <ul class="nav-ul"><li class="nav-link"><a href="/nuxt-maupassant/" class="no-decor-link nuxt-link-active"><i class="fa fa-home"></i>
+          首页
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/about" class="no-decor-link"><i class="fa fa-user"></i>
+          关于
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/history" class="no-decor-link"><i class="fa fa-book"></i>
+          历史
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/blog" class="no-decor-link nuxt-link-active"><i class="fa fa-archive"></i>
+          博客
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/blog/feed.xml" class="no-decor-link"><i class="fa fa-rss"></i>
+          订阅
+        </a> <!----></li><li class="nav-link"><!----> <a target="_blank" href="https://www.houzhenni.com" class="no-decor-link">
+          主站
+        <i class="fa fa-external-link"></i></a></li></ul></div></nav> <div class="blog-wrap"><main class="blog-main"><h1 class="align-center article-title">添加元素平移效果的产品页面</h1> <p class="align-center"><span class="blog-date"><i class="fa fa-calendar"></i>
+        2018-11-08
+      </span> <a href="/nuxt-maupassant/blog/language/中文"><span class="blog-lang"><i class="fa fa-language"></i>
+          中文
+        </span></a></p> <p class="align-center"><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+          技术
+        </a></span></p> <p class="blog-tags align-center"><span class="blog-tag"><a href="/nuxt-maupassant/blog/tag/scroll delay"><i class="fa fa-tag" style="color:inherit"></i>
+          scroll delay
+        </a></span></p> <p class="blog-desc">之前做了不添加任何效果的产品页，这两天看苹果ipad pro的产品页，惊艳到不行，所以自己仿照做一个鼠标滚轮事件触发页面元素平移的版本，不过比较粗糙。</p> <article><ul class="toc"></ul> <div class="markdown-body nuxt-content"><p>之前为了拿到FreeCodeCamp的“Responsive Webpage Design Certification”（响应式网页设计证书），我做了一个单页的产品介绍页面，链接如下：<br>
+<a href="https://codepen.io/c53hzn/pen/vaevqP" rel="nofollow noopener noreferrer" target="_blank">https://codepen.io/c53hzn/pen/vaevqP</a></p>
+<p>页面上没啥好说，布局是从上到下分段式，导航栏固定在视图窗口顶部，点击导航栏链接跳转到页面内部相应模块，整个页面没有用到任何动作。</p>
+<p>产品是我自己想出来的订制T恤衫，6张产品图全是我自己用Photoshop做的，还打上了我的网站logo水印，算是整个页面上最有技术含量的。</p>
+<p>不过可能是个人审美能力所限，我想不到有什么酷炫的页面效果，于是三个月过去了，这个页面上还是没有用上JavaScript。</p>
+<p>然后就到了Apple出新的iPad Pro了，人家的页面果然做得很酷炫，当鼠标滚轮向下滚动时，页面中间的产品元素会向左平移，但是滚动条却会向下走。</p>
+<p>这么酷炫的效果确实让人感到惊艳，仔细研究了下之后发现，这是用了translateX和translateY来控制横向和纵向的位移，感觉可以抄一抄。</p>
+<p>于是就有了这个第二版<br>
+<a href="https://codepen.io/c53hzn/pen/gBNjMR" rel="nofollow noopener noreferrer" target="_blank">https://codepen.io/c53hzn/pen/gBNjMR</a></p>
+<p>效果图如下<br>
+<img alt="product_page.gif" src="https://www.houzhenni.com/myassets/product_page.gif"></p>
+<p>虽然不如人家的效果酷炫，但是感觉比之前的页面活泼了一点。</p>
+<p>就这样啦。</p></div></article> <div class="prev-next"><div class="prev"><a href="/nuxt-maupassant/blog/death-of-a-nobody" title="你们在《镇魂》里看的都是甜甜的爱情，我却看到了社畜的悲哀。。。" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-left"></i></span> <br> <span class="title">社畜烛九之死——看《镇魂》有感</span></a></div> <div class="next"><a href="/nuxt-maupassant/blog/minesweeper" title="我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-right"></i></span> <br> <span class="title">我最喜欢的PC游戏——扫雷</span></a></div></div> <div id="comment"><div class="loadCommentBtn"><i aria-hidden="true" class="fa fa-comment"></i>
+        加载评论
+      </div></div></main> <aside class="blog-side"><div class="side-unit"><p><i class="fa fa-folder-open"></i> 分类</p> <hr> <p><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/时评"><i class="fa fa-folder-open"></i>
+             时评: 3
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/剧评"><i class="fa fa-folder-open"></i>
+             剧评: 17
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Lifestyle"><i class="fa fa-folder-open"></i>
+             Lifestyle: 1
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/日常"><i class="fa fa-folder-open"></i>
+             日常: 10
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/相册"><i class="fa fa-folder-open"></i>
+             相册: 2
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/游记"><i class="fa fa-folder-open"></i>
+             游记: 2
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+             技术: 21
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/测评"><i class="fa fa-folder-open"></i>
+             测评: 4
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/推荐"><i class="fa fa-folder-open"></i>
+             推荐: 3
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Tech"><i class="fa fa-folder-open"></i>
+             Tech: 7
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Review"><i class="fa fa-folder-open"></i>
+             Review: 1
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Commentary"><i class="fa fa-folder-open"></i>
+             Commentary: 1
+           </a></span></p></div> <div class="side-unit"><p><i class="fa fa-file-o"></i> 最新文章</p> <hr> <p><a href="/nuxt-maupassant/blog/li-yundi" class="blog-link">
+         如何评价李云迪
+        </a></p><p><a href="/nuxt-maupassant/blog/tv-review-pandoras-box" class="blog-link">
+         意识流不是这么用的——《天目危机》剧评
+        </a></p><p><a href="/nuxt-maupassant/blog/hongkong-income-tax-en" class="blog-link">
+         Hong Kong Income Tax for Non-local Employees
+        </a></p><p><a href="/nuxt-maupassant/blog/hongkong-income-tax" class="blog-link">
+         如何在香港交税
+        </a></p><p><a href="/nuxt-maupassant/blog/devil-judge" class="blog-link">
+         握不住的正义——《恶魔法官》剧评
+        </a></p></div></aside></div> <footer><p>Powered by Nuxt.js | Theme Maupassant <br>
+    	Re-designed by  
+    	<a href="https://github.com/c53hzn" target="_blank" class="no-decor-link"><strong>Jenny HOU</strong> <i class="fa fa-github font-20"></i></a></p> <div class="go-top go-top-hidden"><div class="arrow"></div> <div class="stick"></div></div></footer></div></div></div><script>window.__NUXT__=function(e,t,a,p,l,n,o,r,i,s,g,d,y,c){return o[0]="FreeCodeCamp",o[1]="FCC",o[2]="Responsive Webpage Design",{layout:"post",data:[{blog:{slug:n,description:"之前做了不添加任何效果的产品页，这两天看苹果ipad pro的产品页，惊艳到不行，所以自己仿照做一个鼠标滚轮事件触发页面元素平移的版本，不过比较粗糙。",date:"2018-11-08T00:00:00.000Z",language:"中文",title:"添加元素平移效果的产品页面",categories:["技术"],tags:["scroll delay"],keywords:o,comments:!0,toc:[],body:{type:"root",children:[{type:t,tag:p,props:{},children:[{type:e,value:"之前为了拿到FreeCodeCamp的“Responsive Webpage Design Certification”（响应式网页设计证书），我做了一个单页的产品介绍页面，链接如下："},{type:t,tag:l,props:{},children:[]},{type:e,value:a},{type:t,tag:"a",props:{href:r,rel:[i,s,g],target:d},children:[{type:e,value:r}]}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"页面上没啥好说，布局是从上到下分段式，导航栏固定在视图窗口顶部，点击导航栏链接跳转到页面内部相应模块，整个页面没有用到任何动作。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"产品是我自己想出来的订制T恤衫，6张产品图全是我自己用Photoshop做的，还打上了我的网站logo水印，算是整个页面上最有技术含量的。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"不过可能是个人审美能力所限，我想不到有什么酷炫的页面效果，于是三个月过去了，这个页面上还是没有用上JavaScript。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"然后就到了Apple出新的iPad Pro了，人家的页面果然做得很酷炫，当鼠标滚轮向下滚动时，页面中间的产品元素会向左平移，但是滚动条却会向下走。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"这么酷炫的效果确实让人感到惊艳，仔细研究了下之后发现，这是用了translateX和translateY来控制横向和纵向的位移，感觉可以抄一抄。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"于是就有了这个第二版"},{type:t,tag:l,props:{},children:[]},{type:e,value:a},{type:t,tag:"a",props:{href:y,rel:[i,s,g],target:d},children:[{type:e,value:y}]}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"效果图如下"},{type:t,tag:l,props:{},children:[]},{type:e,value:a},{type:t,tag:"img",props:{alt:"product_page.gif",src:"https://www.houzhenni.com/myassets/product_page.gif"},children:[]}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"虽然不如人家的效果酷炫，但是感觉比之前的页面活泼了一点。"}]},{type:e,value:a},{type:t,tag:p,props:{},children:[{type:e,value:"就这样啦。"}]}]},dir:"/blog",path:"/blog/2018-11-08-product-landing-page-with-scroll-effects",extension:".md",createdAt:c,updatedAt:c,prev:{slug:"death-of-a-nobody",description:"你们在《镇魂》里看的都是甜甜的爱情，我却看到了社畜的悲哀。。。",title:"社畜烛九之死——看《镇魂》有感"},next:{slug:"minesweeper",description:"我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~",title:"我最喜欢的PC游戏——扫雷"}},mySlug:n,keywords:o,myBase:"/nuxt-maupassant/",latestBlog:[{slug:"li-yundi",title:"如何评价李云迪"},{slug:"tv-review-pandoras-box",title:"意识流不是这么用的——《天目危机》剧评"},{slug:"hongkong-income-tax-en",title:"Hong Kong Income Tax for Non-local Employees"},{slug:"hongkong-income-tax",title:"如何在香港交税"},{slug:"devil-judge",title:"握不住的正义——《恶魔法官》剧评"}],categories:[{name:"时评",len:3},{name:"剧评",len:17},{name:"Lifestyle",len:1},{name:"日常",len:10},{name:"相册",len:2},{name:"游记",len:2},{name:"技术",len:21},{name:"测评",len:4},{name:"推荐",len:3},{name:"Tech",len:7},{name:"Review",len:1},{name:"Commentary",len:1}]}],fetch:[],error:null,state:{lang:{val:"Eng"}},serverRendered:!0,routePath:"/blog/product-landing-page-with-scroll-effects",content:{dbHash:"56a8439d"}}}("text","element","\n","p","br","product-landing-page-with-scroll-effects",Array(3),"https://codepen.io/c53hzn/pen/vaevqP","nofollow","noopener","noreferrer","_blank","https://codepen.io/c53hzn/pen/gBNjMR","2021-11-15T15:22:23.230Z")</script><script src="/nuxt-maupassant/_nuxt/af6577942f9b77b78a3f.js" defer></script><script src="/nuxt-maupassant/_nuxt/ecb9288a66b9d5828a8f.js" defer></script><script src="/nuxt-maupassant/_nuxt/d780c070f2c8433988a2.js" defer></script><script src="/nuxt-maupassant/_nuxt/976a7a55bae2b52f71e4.js" defer></script><script src="/nuxt-maupassant/_nuxt/f38231e021cbaea972be.js" defer></script>
+  </body>
+</html>

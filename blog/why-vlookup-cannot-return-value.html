@@ -1,0 +1,136 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>在Excel中用vlookup公式灵活查找数字或文本类型关键字 | Jenny的小站</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="date" name="date" content="2019-12-28"><meta data-n-head="ssr" data-hid="description" name="description" content="VLOOKUP公式里的查找值必须和被查找区域的首列关键字为相同类型，否则会返回“#N/A”，如果查找值是引用过来的，类型不同，此时可以强行转换类型，即可使VLOOKUP公式生效"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content="技术,Excel,vlookup"><link data-n-head="ssr" rel="shortcut icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/font-Noto-Sans-SC.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/style.css?2021-11-15"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/font-awesome/css/font-awesome.min.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/github-markdown.min.css"><base href="/nuxt-maupassant/"><link rel="preload" href="/nuxt-maupassant/_nuxt/af6577942f9b77b78a3f.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/d780c070f2c8433988a2.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/976a7a55bae2b52f71e4.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/f38231e021cbaea972be.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/ecb9288a66b9d5828a8f.js" as="script"><style data-vue-ssr-id="638ca560:0 3191d5ad:0 72520070:0">code[class*=language-],pre[class*=language-]{color:#393a34;font-family:Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;font-size:.9em;line-height:1.2em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre>code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;background-color:#f3f3f3}:not(pre)>code[class*=language-]{padding:1px .2em;background:#f3f3f3;border:1px solid #ddd}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998;font-style:italic}.token.namespace{opacity:.7}.token.attr-value,.token.string{color:#e3116c}.token.operator,.token.punctuation{color:#393a34}.token.boolean,.token.constant,.token.entity,.token.inserted,.token.number,.token.property,.token.regex,.token.symbol,.token.url,.token.variable{color:#36acaa}.language-autohotkey .token.selector,.token.atrule,.token.attr-name,.token.keyword{color:#00a4db}.language-autohotkey .token.tag,.token.deleted,.token.function{color:#9a050f}.language-autohotkey .token.keyword,.token.selector,.token.tag{color:#00009f}.token.bold,.token.function,.token.important{font-weight:700}.token.italic{font-style:italic}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#3b8070;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.nuxt-content{margin-bottom:50px;text-align:justify;word-break:break-all}.nuxt-content h2{margin:9px 0;padding:9px 0}.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:8px 0;padding:0}.nuxt-content h2,.nuxt-content h3{border-bottom:1px solid silver}.nuxt-content h2{font-size:30px}.nuxt-content h3{font-size:26px}.nuxt-content h4{font-size:24px}.nuxt-content h5{font-size:20px}.nuxt-content p{line-height:24px}.nuxt-content ol{padding-right:18px}.nuxt-content li{line-height:24px}.nuxt-content iframe{margin:0 20px}.nuxt-content iframe.youtube{margin:8px auto 8px 20px;width:480px;height:360px;display:block}.nuxt-content blockquote{margin:16px 0;padding:10px;color:#6a737d;background-color:#f8f8f8;border-left:.25em solid #dfe2e5}.nuxt-content a,.toc a,.toc a:active,.toc a:visited{color:#000;font-weight:700;text-decoration:underline;border:none}.nuxt-content a:hover,.toc a:hover{color:grey}li.toc3{list-style:circle;margin-left:15px}a#comment-link{top:0}.blog-desc{margin:10px 0;padding:10px;color:#666;background-color:rgba(0,0,0,.025)}#disqus_thread{margin-top:20px}.prev-next{margin:20px auto;display:flex;justify-content:space-between}.prev-next a{display:block}.next,.prev{max-width:42%;color:grey;cursor:pointer}.prev{text-align:left}.next{text-align:right}.next:hover,.prev:hover{color:#000}.prev-next-arrow{font-size:28px}#comment{margin:40px 0 0;text-align:center}.loadCommentBtn{margin-bottom:20px;cursor:pointer;display:inline-block}.loadCommentBtn:hover{color:grey}@media (max-width:768px){.nuxt-content h2,.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:9px 0}.nuxt-content blockquote{margin:16px 0}.nuxt-content iframe{margin:0}.nuxt-content iframe.youtube{margin:8px auto;width:100%}.nuxt-content ul{padding-left:20px}.nuxt-content pre{margin-left:0;margin-right:0}.next,.prev{margin:0}#comment{margin:40px 0 0}}@media (max-width:539px){.nuxt-content iframe.youtube{height:auto}}</style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="container-main"><nav><div class="nav-wrap"><header><a href="/nuxt-maupassant/" class="no-decor-link nav-home nuxt-link-active">
+        Jenny's Blog
+      </a> <div class="nav-subtitle">
+        多学多想
+      </div></header> <ul class="nav-ul"><li class="nav-link"><a href="/nuxt-maupassant/" class="no-decor-link nuxt-link-active"><i class="fa fa-home"></i>
+          首页
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/about" class="no-decor-link"><i class="fa fa-user"></i>
+          关于
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/history" class="no-decor-link"><i class="fa fa-book"></i>
+          历史
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/blog" class="no-decor-link nuxt-link-active"><i class="fa fa-archive"></i>
+          博客
+        </a> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/blog/feed.xml" class="no-decor-link"><i class="fa fa-rss"></i>
+          订阅
+        </a> <!----></li><li class="nav-link"><!----> <a target="_blank" href="https://www.houzhenni.com" class="no-decor-link">
+          主站
+        <i class="fa fa-external-link"></i></a></li></ul></div></nav> <div class="blog-wrap"><main class="blog-main"><h1 class="align-center article-title">在Excel中用vlookup公式灵活查找数字或文本类型关键字</h1> <p class="align-center"><span class="blog-date"><i class="fa fa-calendar"></i>
+        2019-12-28
+      </span> <a href="/nuxt-maupassant/blog/language/中文"><span class="blog-lang"><i class="fa fa-language"></i>
+          中文
+        </span></a></p> <p class="align-center"><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+          技术
+        </a></span></p> <p class="blog-tags align-center"><span class="blog-tag"><a href="/nuxt-maupassant/blog/tag/Excel"><i class="fa fa-tag" style="color:inherit"></i>
+          Excel
+        </a></span><span class="blog-tag"><a href="/nuxt-maupassant/blog/tag/vlookup"><i class="fa fa-tag" style="color:inherit"></i>
+          vlookup
+        </a></span></p> <p class="blog-desc">VLOOKUP公式里的查找值必须和被查找区域的首列关键字为相同类型，否则会返回“#N/A”，如果查找值是引用过来的，类型不同，此时可以强行转换类型，即可使VLOOKUP公式生效</p> <article><ul class="toc"><li class="toc2"><a href="/nuxt-maupassant/blog/why-vlookup-cannot-return-value#想用关键字在多列数据的excel表里找对应数据，公式怎么写？">想用关键字在多列数据的Excel表里找对应数据，公式怎么写？</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/why-vlookup-cannot-return-value#vlookup公式明明是对的，为什么返回了na？">VLOOKUP公式明明是对的，为什么返回了“#N/A”？</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/why-vlookup-cannot-return-value#数据区域和查找值不能修改，如何让vlookup正确返回数据？">数据区域和查找值不能修改，如何让VLOOKUP正确返回数据？</a></li></ul> <div class="markdown-body nuxt-content"><h2 id="想用关键字在多列数据的excel表里找对应数据，公式怎么写？"><a aria-hidden="true" href="#%E6%83%B3%E7%94%A8%E5%85%B3%E9%94%AE%E5%AD%97%E5%9C%A8%E5%A4%9A%E5%88%97%E6%95%B0%E6%8D%AE%E7%9A%84excel%E8%A1%A8%E9%87%8C%E6%89%BE%E5%AF%B9%E5%BA%94%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%85%AC%E5%BC%8F%E6%80%8E%E4%B9%88%E5%86%99%EF%BC%9F" tabindex="-1"><span class="icon icon-link"></span></a>想用关键字在多列数据的Excel表里找对应数据，公式怎么写？</h2>
+<p>假设你在A1到B6范围内有一个姓名和性别的对应列表，你想在D2单元格输入姓名，在E2单元格得到性别，那么E2的公式可以按下图这样写。在E2输入 <code>=VLOOKUP(D2,A1:B6,2,FALSE)</code></p>
+<p><img alt="vlookup01" src="/img/blog/2019-12-28/vlookup01.png"><br>
+图1</p>
+<p>解析：<br>
+VLOOKUP公式一共需要4个参数，前3个是必填的，第4个是选填的。</p>
+<ol>
+<li>第一个参数是“查找值”</li>
+</ol>
+<p>它也就是你想用来查找的关键字，在查找的时候要用这个关键字去匹配被查找的数据区域的第一列，从中找到匹配的那一项。假如你的关键字是姓名，那么你要确保被查找的数据区域内“姓名”是在左边第一列，而如果性别在左，姓名在右，那么用普通的VLOOKUP写法就找不到它了。这时可以搜一下“VLOOKUP反向查找”，太长不说。</p>
+<ol start="2">
+<li>第二个参数是被查找的数据区域</li>
+</ol>
+<p>本次被查找的数据处在A1到B6单元格范围内，其实你输入“A1:B6”或者“A2:B6”效果都是一样的，因为第一行是标题行，可以不要。<br>
+如果不想精确到哪一行，可以用“A:B”，那么被查找的数据范围就会扩大到整个两列，而不只是这12个单元格。</p>
+<ol start="3">
+<li>第三个参数是用户想显示的数据在被查找的数据区的第几列</li>
+</ol>
+<p>本次我们的数据区域只有两列，“性别”在第2列，如果我们想显示“性别”，那么就输入2，而如果我们想显示被查找的关键字自己，输入1就可以了。<br>
+此处要注意，这个 <code>2</code> 是返回值相对于整个数据区域的第几列，如果数据区域在C1到D6，仍然是2列，“性别”仍然在第2列，那么虽然D是整个Excel的第4列，我们还是要输入2。</p>
+<ol start="4">
+<li>第四个参数是布尔值，是问用户要不要模糊查找</li>
+</ol>
+<p>“布尔值”就是TRUE和FALSE，如果这里不填，默认为TRUE，那么就会进行模糊查找匹配，可能你要找张涵予，而列表里没有张涵予，但是有张馨予，那就给你匹配到张馨予那里了，这样就不太对了。<br>
+总之建议你写上FALSE就行了。</p>
+<p>* 如果有两个张涵予，一个是男的，一个是女的，那么返回哪个人的性别呢？<br>
+答：返回第一个出现的张涵予的性别，如果是女的在前面，那就返回女的。</p>
+<p>* 如何让单元格直接显示 <code>=VLOOKUP(D2,A1:B6,2,FALSE)</code> ？<br>
+答：可能会有人想知道怎样让单元格直接显示 <code>=VLOOKUP(D2,A1:B6,2,FALSE)</code> 而不是计算结果，其实有两种办法。</p>
+<ol>
+<li>把单元格格式改成“文本”，然后双击单元格再回车即可。</li>
+<li>在单元格内输入<code>="=VLOOKUP(D2,A1:B6,2,FALSE)"</code>即可。</li>
+</ol>
+<p>* 那么反过来，如果单元格内输入了公式却不显示计算结果只显示公式本身，那怎么办？<br>
+答：把单元格格式改成“数字”，然后双击单元格再回车即可。</p>
+<h2 id="vlookup公式明明是对的，为什么返回了na？"><a aria-hidden="true" href="#vlookup%E5%85%AC%E5%BC%8F%E6%98%8E%E6%98%8E%E6%98%AF%E5%AF%B9%E7%9A%84%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%94%E5%9B%9E%E4%BA%86na%EF%BC%9F" tabindex="-1"><span class="icon icon-link"></span></a>VLOOKUP公式明明是对的，为什么返回了“#N/A”？</h2>
+<p>假如我们现在不用汉字而是用纯数字做查找值，那么会怎么样呢？看看下面的2个例子吧！</p>
+<p><img alt="vlookup02" src="/img/blog/2019-12-28/vlookup02.png"><br>
+图2</p>
+<p><img alt="vlookup03" src="/img/blog/2019-12-28/vlookup03.png"><br>
+图3</p>
+<p>数据区域范围、查找值单元格位置、公式什么的全都跟之前是一样的，为什么都会返回一个错误呢？</p>
+<p>这里要注意了，图2里面的数据区域的“学号”的单元格左上角有绿色小三角，且Excel默认给它们居左了，这说明从A2到A6的单元格格式为“文本”。我们再看用来查找的关键字D2，它左上角没有绿色小三角，且Excel默认给它居右了，这说明它的单元格格式为“数字”，两边的数据格式不一致。当我们用“数字”作为关键字去匹配“文本”格式的数据时，是找不到结果的，所以公式计算的结果就报错了。</p>
+<p>再看图3，数据区域的“学号”的单元格左上角没有绿色小三角，且Excel默认给它居右了，这说明从A2到A6的单元格格式为“数字”。我们再看用来查找的关键字D2，它左上角有绿色小三角，且Excel默认给它们居左了，这说明它的单元格格式为“文本”，又是出现了数据格式不一致的情况，所以也是找不到的。</p>
+<p>例1有两种解决办法：</p>
+<ol>
+<li>选中A2到A6，Excel会提示一个黄色的感叹号按钮，点击感叹号可以批量将文本格式的数字改成数字格式。</li>
+<li>给D2的数字前面加个英文的单引号</li>
+</ol>
+<p>例2也有两种解决办法：</p>
+<ol>
+<li>选中A2到A6，右击选中区域，点“单元格格式”，改成“文本”，但是还需要一个一个双击单元格再回车来确认输入，所以不推荐</li>
+<li>把D2单元格里数字前面的英文单引号删掉</li>
+</ol>
+<h2 id="数据区域和查找值不能修改，如何让vlookup正确返回数据？"><a aria-hidden="true" href="#%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%9F%A5%E6%89%BE%E5%80%BC%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AE%A9vlookup%E6%AD%A3%E7%A1%AE%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%EF%BC%9F" tabindex="-1"><span class="icon icon-link"></span></a>数据区域和查找值不能修改，如何让VLOOKUP正确返回数据？</h2>
+<p>想要解决上面的问题，但又不能直接改数据区域和查找值，那么我们可以对公式作如下的修改</p>
+<p><img alt="vlookup04" src="/img/blog/2019-12-28/vlookup04.png"><br>
+图4</p>
+<p><img alt="vlookup05" src="/img/blog/2019-12-28/vlookup05.png"><br>
+图5</p>
+<p>在VLOOKUP公式当中，如果我们希望查找值D2从数字转为“文本”，可以在查找值的位置输入 <code>D2&""</code>，这样就能在不更改D2的情况下，强行把VLOOKUP公式内的查找值变成“文本”类型。</p>
+<p>而如果我们希望查找值D2从文本转为“数字”，可以在查找值的位置输入 <code>D2+0</code>，这样就能在不更改D2的情况下，强行把VLOOKUP公式内的查找值变成“数字”类型。</p>
+<p>* 使用 <code>+0</code> 时必须确认原数据是纯数字，否则会报错</p>
+<p>以上~</p></div></article> <div class="prev-next"><div class="prev"><a href="/nuxt-maupassant/blog/the-birth-of-the-drama-king" title="最近配套看完了另一部剧《少年江湖物语》和它的原著《如何错误地套路一个魔教教主》，导演为了过审竟然拆CP？Exo me？" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-left"></i></span> <br> <span class="title">沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感</span></a></div> <div class="next"><a href="/nuxt-maupassant/blog/summary-of-my-life-in-2019" title="我的2019年过得还算充实，看了很多剧，追了很多星，做了很多事，还学了很多东西，要继续保持。" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-right"></i></span> <br> <span class="title">2019年的小总结</span></a></div></div> <div id="comment"><div class="loadCommentBtn"><i aria-hidden="true" class="fa fa-comment"></i>
+        加载评论
+      </div></div></main> <aside class="blog-side"><div class="side-unit"><p><i class="fa fa-folder-open"></i> 分类</p> <hr> <p><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/时评"><i class="fa fa-folder-open"></i>
+             时评: 3
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/剧评"><i class="fa fa-folder-open"></i>
+             剧评: 17
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Lifestyle"><i class="fa fa-folder-open"></i>
+             Lifestyle: 1
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/日常"><i class="fa fa-folder-open"></i>
+             日常: 10
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/相册"><i class="fa fa-folder-open"></i>
+             相册: 2
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/游记"><i class="fa fa-folder-open"></i>
+             游记: 2
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+             技术: 21
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/测评"><i class="fa fa-folder-open"></i>
+             测评: 4
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/推荐"><i class="fa fa-folder-open"></i>
+             推荐: 3
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Tech"><i class="fa fa-folder-open"></i>
+             Tech: 7
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Review"><i class="fa fa-folder-open"></i>
+             Review: 1
+           </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Commentary"><i class="fa fa-folder-open"></i>
+             Commentary: 1
+           </a></span></p></div> <div class="side-unit"><p><i class="fa fa-file-o"></i> 最新文章</p> <hr> <p><a href="/nuxt-maupassant/blog/li-yundi" class="blog-link">
+         如何评价李云迪
+        </a></p><p><a href="/nuxt-maupassant/blog/tv-review-pandoras-box" class="blog-link">
+         意识流不是这么用的——《天目危机》剧评
+        </a></p><p><a href="/nuxt-maupassant/blog/hongkong-income-tax-en" class="blog-link">
+         Hong Kong Income Tax for Non-local Employees
+        </a></p><p><a href="/nuxt-maupassant/blog/hongkong-income-tax" class="blog-link">
+         如何在香港交税
+        </a></p><p><a href="/nuxt-maupassant/blog/devil-judge" class="blog-link">
+         握不住的正义——《恶魔法官》剧评
+        </a></p></div></aside></div> <footer><p>Powered by Nuxt.js | Theme Maupassant <br>
+    	Re-designed by  
+    	<a href="https://github.com/c53hzn" target="_blank" class="no-decor-link"><strong>Jenny HOU</strong> <i class="fa fa-github font-20"></i></a></p> <div class="go-top go-top-hidden"><div class="arrow"></div> <div class="stick"></div></div></footer></div></div></div><script>window.__NUXT__=function(e,p,t,l,a,y,r,n,o,u,v,i,g,s,c,d,E,h,A,B,m,x,k){return{layout:"post",data:[{blog:{slug:d,description:"VLOOKUP公式里的查找值必须和被查找区域的首列关键字为相同类型，否则会返回“#N/A”，如果查找值是引用过来的，类型不同，此时可以强行转换类型，即可使VLOOKUP公式生效",date:"2019-12-28T00:00:00.000Z",language:"中文",title:"在Excel中用vlookup公式灵活查找数字或文本类型关键字",categories:["技术"],tags:["Excel","vlookup"],comments:!0,toc:[{id:E,depth:2,text:h},{id:A,depth:2,text:B},{id:m,depth:2,text:x}],body:{type:"root",children:[{type:p,tag:u,props:{id:E},children:[{type:p,tag:"a",props:{ariaHidden:v,href:"#%E6%83%B3%E7%94%A8%E5%85%B3%E9%94%AE%E5%AD%97%E5%9C%A8%E5%A4%9A%E5%88%97%E6%95%B0%E6%8D%AE%E7%9A%84excel%E8%A1%A8%E9%87%8C%E6%89%BE%E5%AF%B9%E5%BA%94%E6%95%B0%E6%8D%AE%EF%BC%8C%E5%85%AC%E5%BC%8F%E6%80%8E%E4%B9%88%E5%86%99%EF%BC%9F",tabIndex:-1},children:[{type:p,tag:i,props:{className:[g,s]},children:[]}]},{type:e,value:h}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"假设你在A1到B6范围内有一个姓名和性别的对应列表，你想在D2单元格输入姓名，在E2单元格得到性别，那么E2的公式可以按下图这样写。在E2输入 "},{type:p,tag:r,props:{},children:[{type:e,value:c}]}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:p,tag:o,props:{alt:"vlookup01",src:"/img/blog/2019-12-28/vlookup01.png"},children:[]},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n图1"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"解析："},{type:p,tag:a,props:{},children:[]},{type:e,value:"\nVLOOKUP公式一共需要4个参数，前3个是必填的，第4个是选填的。"}]},{type:e,value:t},{type:p,tag:n,props:{},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"第一个参数是“查找值”"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"它也就是你想用来查找的关键字，在查找的时候要用这个关键字去匹配被查找的数据区域的第一列，从中找到匹配的那一项。假如你的关键字是姓名，那么你要确保被查找的数据区域内“姓名”是在左边第一列，而如果性别在左，姓名在右，那么用普通的VLOOKUP写法就找不到它了。这时可以搜一下“VLOOKUP反向查找”，太长不说。"}]},{type:e,value:t},{type:p,tag:n,props:{start:2},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"第二个参数是被查找的数据区域"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"本次被查找的数据处在A1到B6单元格范围内，其实你输入“A1:B6”或者“A2:B6”效果都是一样的，因为第一行是标题行，可以不要。"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n如果不想精确到哪一行，可以用“A:B”，那么被查找的数据范围就会扩大到整个两列，而不只是这12个单元格。"}]},{type:e,value:t},{type:p,tag:n,props:{start:3},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"第三个参数是用户想显示的数据在被查找的数据区的第几列"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"本次我们的数据区域只有两列，“性别”在第2列，如果我们想显示“性别”，那么就输入2，而如果我们想显示被查找的关键字自己，输入1就可以了。"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n此处要注意，这个 "},{type:p,tag:r,props:{},children:[{type:e,value:"2"}]},{type:e,value:" 是返回值相对于整个数据区域的第几列，如果数据区域在C1到D6，仍然是2列，“性别”仍然在第2列，那么虽然D是整个Excel的第4列，我们还是要输入2。"}]},{type:e,value:t},{type:p,tag:n,props:{start:4},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"第四个参数是布尔值，是问用户要不要模糊查找"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"“布尔值”就是TRUE和FALSE，如果这里不填，默认为TRUE，那么就会进行模糊查找匹配，可能你要找张涵予，而列表里没有张涵予，但是有张馨予，那就给你匹配到张馨予那里了，这样就不太对了。"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n总之建议你写上FALSE就行了。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"* 如果有两个张涵予，一个是男的，一个是女的，那么返回哪个人的性别呢？"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n答：返回第一个出现的张涵予的性别，如果是女的在前面，那就返回女的。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"* 如何让单元格直接显示 "},{type:p,tag:r,props:{},children:[{type:e,value:c}]},{type:e,value:" ？"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n答：可能会有人想知道怎样让单元格直接显示 "},{type:p,tag:r,props:{},children:[{type:e,value:c}]},{type:e,value:" 而不是计算结果，其实有两种办法。"}]},{type:e,value:t},{type:p,tag:n,props:{},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"把单元格格式改成“文本”，然后双击单元格再回车即可。"}]},{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"在单元格内输入"},{type:p,tag:r,props:{},children:[{type:e,value:'="=VLOOKUP(D2,A1:B6,2,FALSE)"'}]},{type:e,value:"即可。"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"* 那么反过来，如果单元格内输入了公式却不显示计算结果只显示公式本身，那怎么办？"},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n答：把单元格格式改成“数字”，然后双击单元格再回车即可。"}]},{type:e,value:t},{type:p,tag:u,props:{id:A},children:[{type:p,tag:"a",props:{ariaHidden:v,href:"#vlookup%E5%85%AC%E5%BC%8F%E6%98%8E%E6%98%8E%E6%98%AF%E5%AF%B9%E7%9A%84%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%94%E5%9B%9E%E4%BA%86na%EF%BC%9F",tabIndex:-1},children:[{type:p,tag:i,props:{className:[g,s]},children:[]}]},{type:e,value:B}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"假如我们现在不用汉字而是用纯数字做查找值，那么会怎么样呢？看看下面的2个例子吧！"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:p,tag:o,props:{alt:"vlookup02",src:"/img/blog/2019-12-28/vlookup02.png"},children:[]},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n图2"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:p,tag:o,props:{alt:"vlookup03",src:"/img/blog/2019-12-28/vlookup03.png"},children:[]},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n图3"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"数据区域范围、查找值单元格位置、公式什么的全都跟之前是一样的，为什么都会返回一个错误呢？"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"这里要注意了，图2里面的数据区域的“学号”的单元格左上角有绿色小三角，且Excel默认给它们居左了，这说明从A2到A6的单元格格式为“文本”。我们再看用来查找的关键字D2，它左上角没有绿色小三角，且Excel默认给它居右了，这说明它的单元格格式为“数字”，两边的数据格式不一致。当我们用“数字”作为关键字去匹配“文本”格式的数据时，是找不到结果的，所以公式计算的结果就报错了。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"再看图3，数据区域的“学号”的单元格左上角没有绿色小三角，且Excel默认给它居右了，这说明从A2到A6的单元格格式为“数字”。我们再看用来查找的关键字D2，它左上角有绿色小三角，且Excel默认给它们居左了，这说明它的单元格格式为“文本”，又是出现了数据格式不一致的情况，所以也是找不到的。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"例1有两种解决办法："}]},{type:e,value:t},{type:p,tag:n,props:{},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"选中A2到A6，Excel会提示一个黄色的感叹号按钮，点击感叹号可以批量将文本格式的数字改成数字格式。"}]},{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"给D2的数字前面加个英文的单引号"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"例2也有两种解决办法："}]},{type:e,value:t},{type:p,tag:n,props:{},children:[{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"选中A2到A6，右击选中区域，点“单元格格式”，改成“文本”，但是还需要一个一个双击单元格再回车来确认输入，所以不推荐"}]},{type:e,value:t},{type:p,tag:y,props:{},children:[{type:e,value:"把D2单元格里数字前面的英文单引号删掉"}]},{type:e,value:t}]},{type:e,value:t},{type:p,tag:u,props:{id:m},children:[{type:p,tag:"a",props:{ariaHidden:v,href:"#%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%9F%A5%E6%89%BE%E5%80%BC%E4%B8%8D%E8%83%BD%E4%BF%AE%E6%94%B9%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AE%A9vlookup%E6%AD%A3%E7%A1%AE%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE%EF%BC%9F",tabIndex:-1},children:[{type:p,tag:i,props:{className:[g,s]},children:[]}]},{type:e,value:x}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"想要解决上面的问题，但又不能直接改数据区域和查找值，那么我们可以对公式作如下的修改"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:p,tag:o,props:{alt:"vlookup04",src:"/img/blog/2019-12-28/vlookup04.png"},children:[]},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n图4"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:p,tag:o,props:{alt:"vlookup05",src:"/img/blog/2019-12-28/vlookup05.png"},children:[]},{type:p,tag:a,props:{},children:[]},{type:e,value:"\n图5"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"在VLOOKUP公式当中，如果我们希望查找值D2从数字转为“文本”，可以在查找值的位置输入 "},{type:p,tag:r,props:{},children:[{type:e,value:'D2&""'}]},{type:e,value:"，这样就能在不更改D2的情况下，强行把VLOOKUP公式内的查找值变成“文本”类型。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"而如果我们希望查找值D2从文本转为“数字”，可以在查找值的位置输入 "},{type:p,tag:r,props:{},children:[{type:e,value:"D2+0"}]},{type:e,value:"，这样就能在不更改D2的情况下，强行把VLOOKUP公式内的查找值变成“数字”类型。"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"* 使用 "},{type:p,tag:r,props:{},children:[{type:e,value:"+0"}]},{type:e,value:" 时必须确认原数据是纯数字，否则会报错"}]},{type:e,value:t},{type:p,tag:l,props:{},children:[{type:e,value:"以上~"}]}]},dir:"/blog",path:"/blog/2019-12-28-why-vlookup-cannot-return-value",extension:".md",createdAt:k,updatedAt:k,prev:{slug:"the-birth-of-the-drama-king",description:"最近配套看完了另一部剧《少年江湖物语》和它的原著《如何错误地套路一个魔教教主》，导演为了过审竟然拆CP？Exo me？",title:"沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感"},next:{slug:"summary-of-my-life-in-2019",description:"我的2019年过得还算充实，看了很多剧，追了很多星，做了很多事，还学了很多东西，要继续保持。",title:"2019年的小总结"}},mySlug:d,keywords:[],myBase:"/nuxt-maupassant/",latestBlog:[{slug:"li-yundi",title:"如何评价李云迪"},{slug:"tv-review-pandoras-box",title:"意识流不是这么用的——《天目危机》剧评"},{slug:"hongkong-income-tax-en",title:"Hong Kong Income Tax for Non-local Employees"},{slug:"hongkong-income-tax",title:"如何在香港交税"},{slug:"devil-judge",title:"握不住的正义——《恶魔法官》剧评"}],categories:[{name:"时评",len:3},{name:"剧评",len:17},{name:"Lifestyle",len:1},{name:"日常",len:10},{name:"相册",len:2},{name:"游记",len:2},{name:"技术",len:21},{name:"测评",len:4},{name:"推荐",len:3},{name:"Tech",len:7},{name:"Review",len:1},{name:"Commentary",len:1}]}],fetch:[],error:null,state:{lang:{val:"Eng"}},serverRendered:!0,routePath:"/blog/why-vlookup-cannot-return-value",content:{dbHash:"56a8439d"}}}("text","element","\n","p","br","li","code","ol","img","h2","true","span","icon","icon-link","=VLOOKUP(D2,A1:B6,2,FALSE)","why-vlookup-cannot-return-value","想用关键字在多列数据的excel表里找对应数据，公式怎么写？","想用关键字在多列数据的Excel表里找对应数据，公式怎么写？","vlookup公式明明是对的，为什么返回了na？","VLOOKUP公式明明是对的，为什么返回了“#N/A”？","数据区域和查找值不能修改，如何让vlookup正确返回数据？","数据区域和查找值不能修改，如何让VLOOKUP正确返回数据？","2021-11-15T15:22:23.230Z")</script><script src="/nuxt-maupassant/_nuxt/af6577942f9b77b78a3f.js" defer></script><script src="/nuxt-maupassant/_nuxt/ecb9288a66b9d5828a8f.js" defer></script><script src="/nuxt-maupassant/_nuxt/d780c070f2c8433988a2.js" defer></script><script src="/nuxt-maupassant/_nuxt/976a7a55bae2b52f71e4.js" defer></script><script src="/nuxt-maupassant/_nuxt/f38231e021cbaea972be.js" defer></script>
+  </body>
+</html>
