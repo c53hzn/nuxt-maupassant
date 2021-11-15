@@ -1,0 +1,271 @@
+# pages/index.vue
+home:
+  mypic: /img/mypic.png
+  bg_pic: /img/home/bg-2.jpg
+  ui_zh: 
+    homepage_desc: 自学前端开发，专业电商运营，熟练掌握Photoshop和Excel的72种用法，欢迎来我的小站玩耍~
+    read_more: 查看全部
+    cv_design: 设计
+    new_posts: 最新文章
+    my_cv: 我的简历
+    my_portfolio: 我的作品
+    my_store: 我的网店
+    go_to_store: 查看全部
+    my_desk: 单人版推特
+  ui_en: 
+    homepage_desc: Self-taught Front-End developer, experienced E-Commerce specialist, expert in Photoshop and Excel. Welcome to my blog~
+    read_more: Read More
+    cv_design: Design
+    new_posts: Latest Posts
+    my_cv: My Resume
+    my_portfolio: My Portfolio
+    my_store: My Store
+    go_to_store: Shop All
+    my_desk: My one-person twitter
+  cv_pics: 
+    - src: /img/home/resume01.png
+      title: Design 1
+    - src: /img/home/resume02.png
+      title: Design 2
+    - src: /img/home/resume03.png
+      title: Design 3
+    - src: /img/home/resume04.png
+      title: Design 4
+  portfolio_zh: 
+    - src: /img/portfolio/portfolio01.png
+      title: Markdown编辑器
+      link: https://codepen.io/c53hzn/full/YzzRzxR
+    - src: /img/portfolio/portfolio02.png
+      title: 产品落地页
+      link: https://codepen.io/c53hzn/full/vaevqP
+    - src: /img/portfolio/portfolio03.png
+      title: eBay刊登专用<br>图片检查工具
+      link: https://codepen.io/c53hzn/full/bMjVLe
+    - src: /img/portfolio/portfolio04.png
+      title: 技术文档页面<br>CSS形状指南
+      link: https://codepen.io/c53hzn/full/gjXwdE
+  portfolio_en: 
+    - src: /img/portfolio/portfolio01.png
+      title: Markdown editor
+      link: https://codepen.io/c53hzn/full/YzzRzxR
+    - src: /img/portfolio/portfolio02.png
+      title: Product Landing Page
+      link: https://codepen.io/c53hzn/full/vaevqP
+    - src: /img/portfolio/portfolio03.png
+      title: Image size checker for eBay
+      link: https://codepen.io/c53hzn/full/bMjVLe
+    - src: /img/portfolio/portfolio04.png
+      title: Technical Documentation Page<br>CSS shape guide
+      link: https://codepen.io/c53hzn/full/gjXwdE
+
+# pages/portfolio
+portfolio:
+  portfolio_description: Portfolio of Jenny HOU
+  ui_zh:
+    cover_pic_title: 复刻Windows扫雷游戏
+    cover_proj: 置顶作品
+    feat_proj: 精选作品
+    other_proj: 其他作品
+  ui_en:
+    cover_pic_title: Replicated Windows Minesweeper Game
+    cover_proj: Cover Project
+    feat_proj: Featured Projects
+    other_proj: Other Projects
+  cover_proj:
+    img_src: /img/portfolio/portfolio00.png
+    link: https://www.houzhenni.com/myapp/minesweeper-vue.html
+  portfolio1: 
+    Chi:
+      - src: /img/portfolio/portfolio03.png
+        title: eBay刊登专用图片检查工具
+        link: https://codepen.io/c53hzn/full/bMjVLe
+        desc: 一款可凭借图片URL加载图片并检查图片尺寸是否符合eBay要求的工具
+      - src: /img/portfolio/portfolio11.png
+        title: Excel文字拼接工具
+        link: https://codepen.io/c53hzn/full/dyYLrMM
+        desc: 一款可以简化Excel操作的工具，拼接单元格内容再不是难事
+      - src: /img/portfolio/portfolio01.png
+        title: Markdown编辑器
+        link: https://codepen.io/c53hzn/full/YzzRzxR
+        desc: 一款可以随时预览并更改内联样式的Markdown编辑器
+      - src: /img/portfolio/portfolio06.png
+        title: 随机名言生成器
+        link: https://codepen.io/c53hzn/full/GyjzZb
+        desc: 一个可以从《犯罪心理》第3季的片头片尾名言中随即显示并变换页面颜色的应用
+      - src: /img/portfolio/portfolio08.png
+        title: 番茄钟
+        link: https://codepen.io/c53hzn/full/OvZzpX
+        desc: 一个可以设置工作时间与休息时间的计时器
+      - src: /img/portfolio/portfolio12.png
+        title: 简历生成器
+        link: https://codepen.io/c53hzn/full/PgayKq
+        desc: 一个可以随意编辑所有元素并可以保存成PDF的网页版简历
+    Eng:
+      - src: /img/portfolio/portfolio03.png
+        title: Image size checker for eBay
+        link: https://codepen.io/c53hzn/full/bMjVLe
+        desc: A checker that can load pictures from picture URLs and check if they fulfill eBay requirements
+      - src: /img/portfolio/portfolio11.png
+        title: Excel Manipulator
+        link: https://codepen.io/c53hzn/full/dyYLrMM
+        desc: A tool for simplifying excel operation you can concatenate cells as you want
+      - src: /img/portfolio/portfolio01.png
+        title: Markdown editor
+        link: https://codepen.io/c53hzn/full/YzzRzxR
+        desc: A Markdown editor with preview and in-line style adjustment function
+      - src: /img/portfolio/portfolio06.png
+        title: Random Quote Machine
+        link: https://codepen.io/c53hzn/full/GyjzZb
+        desc: An application that can generate random quotes from Criminal Minds Season 3 quotes and can change color for each quote generated
+      - src: /img/portfolio/portfolio08.png
+        title: Pomodoro Clock
+        link: https://codepen.io/c53hzn/full/OvZzpX
+        desc: A timer that can set time slot for work and break
+      - src: /img/portfolio/portfolio12.png
+        title: Resume Generator
+        link: https://codepen.io/c53hzn/full/PgayKq
+        desc: A webpage resume where all elements are editable and can be saved as PDF
+
+  portfolio2:
+    Chi:
+      - src: /img/portfolio/portfolio02.png
+        title: 产品落地页
+        link: https://codepen.io/c53hzn/full/vaevqP
+        desc: 一个有不同内容分区的产品落地页
+      - src: /img/portfolio/portfolio04.png
+        title: 技术文档页面
+        link: https://codepen.io/c53hzn/full/gjXwdE
+        desc: 一个显示常见形状的CSS代码的文档页面
+      - src: /img/portfolio/portfolio05.png
+        title: Twich直播app手机界面
+        link: https://codepen.io/c53hzn/full/xWjGPO
+        desc: 一个显示用户状态并有搜索功能的静态UI界面
+      - src: /img/portfolio/portfolio07.png
+        title: 小米手机时钟UI界面
+        link: https://codepen.io/c53hzn/full/errgwo
+        desc: 一款有特殊指针的手机时钟app
+      - src: /img/portfolio/portfolio09.png
+        title: 维基百科搜索应用
+        link: https://codepen.io/c53hzn/full/qpqLjR
+        desc: 一个使用维基百科API的搜索工具
+      - src: /img/portfolio/portfolio10.png
+        title: JavaScript计算器
+        link: https://codepen.io/c53hzn/full/rvEZZg
+        desc: 一个可以做基本运算的计算器
+    Eng:
+      - src: /img/portfolio/portfolio02.png
+        title: Product Landing Page
+        link: https://codepen.io/c53hzn/full/vaevqP
+        desc: A product landing page with different sections
+      - src: /img/portfolio/portfolio04.png
+        title: Technical Documentation Page
+        link: https://codepen.io/c53hzn/full/gjXwdE
+        desc: A documentation page with some commonly seen shapes and their CSS codes
+      - src: /img/portfolio/portfolio05.png
+        title: Twich TV live mobile UI
+        link: https://codepen.io/c53hzn/full/xWjGPO
+        desc: A static UI that has search function and can display users with status
+      - src: /img/portfolio/portfolio07.png
+        title: Xiaomi Clock UI
+        link: https://codepen.io/c53hzn/full/errgwo
+        desc: A clock with special pointers
+      - src: /img/portfolio/portfolio09.png
+        title: Wikipedia Search Viewer
+        link: https://codepen.io/c53hzn/full/qpqLjR
+        desc: A search box that uses Wikipedia API
+      - src: /img/portfolio/portfolio10.png
+        title: JavaScript Calculator
+        link: https://codepen.io/c53hzn/full/rvEZZg
+        desc: A calculator that can do basic calculations
+
+# pages/blog/index.vue
+blog_index:
+  blog_description: My blog article list
+  ui_zh:
+    all_posts: 所有文章
+    all_tags: 标签列表
+    all_categories: 分类列表
+    subscribe: 订阅
+    tag: 标签
+    category: 分类
+    language: 语言
+  ui_en:
+    all_posts: All posts
+    all_tags: Tag list
+    all_categories: Category list
+    subscribe: Subscribe
+    tag: Tags
+    category: Categories
+    language: Language
+
+# pages/blog/_slug.vue
+blog_slug:
+  ui_zh:
+    related_posts: 相关文章
+    loadComment: 加载评论
+  ui_en:
+    related_posts: Related Posts
+    loadComment: Load Comments
+
+# pages/blog/tag/index.vue
+blog_tag_index:
+  page_description: My tag list
+  ui_str_zh: 
+    tag_list: 标签列表
+    all_posts: 所有文章
+  ui_str_en: 
+    tag_list: Tag list
+    all_posts: All posts
+
+# pages/blog/tag/_tag.vue
+blog_tag_tag:
+  ui_zh: 
+    tag: 标签
+    all_tags: 标签列表
+    all_posts: 所有文章
+  ui_en: 
+    tag: Tag
+    all_tags: Tag list
+    all_posts: All posts
+
+# pages/blog/language/index.vue
+blog_language_index:
+  ui_zh: 
+    lang_list: 语言列表
+    all_posts: 所有文章
+  ui_en: 
+    lang_list: Language list
+    all_posts: All posts
+
+# pages/blog/language/_language.vue
+blog_language_language:
+  ui_zh: 
+    language: 语言
+    all_language: 语言列表
+    all_posts: 所有文章
+  ui_en: 
+    language: Language
+    all_language: Language list
+    all_posts: All posts
+
+# pages/blog/category/index.vue
+blog_category_index:
+  page_description: My category list
+  ui_str_zh: 
+    tag_list: 分类列表
+    all_posts: 所有文章
+  ui_str_en: 
+    tag_list: Category list
+    all_posts: All posts
+
+# pages/blog/category/_category.vue
+blog_category_category:
+  ui_zh: 
+    category: 分类
+    all_categories: 分类列表
+    all_posts: 所有文章
+  ui_en: 
+    category: Category
+    all_categories: Category list
+    all_posts: All posts
+
