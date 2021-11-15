@@ -125,7 +125,6 @@ export default {
 
     var latestBlog = await getLatest5(context.$content);
     var categories = await getCategories(context.$content);
-    var blog_by_year = await getBlogByYear(context.$content);
 
     return {
       blog,

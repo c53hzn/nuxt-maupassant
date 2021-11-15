@@ -29,6 +29,7 @@ nav {
 header {
 	height: 100%;
 	z-index: 2;
+	margin-bottom: 20px;
 }
 .nav-home {
 	font-size: 30px;
@@ -351,9 +352,10 @@ ul.year-list {
   }
 }
 @media all and (max-width: 768px) {
-  .below-nav {
-    background: white;
-  }
+	.nav-ul {
+		padding: 0px;
+		text-align: left;
+	}
   .blog-wrap {
     margin: 0px;
     padding: 0px;

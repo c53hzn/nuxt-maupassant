@@ -67,8 +67,8 @@ export default {
         fa_class: "fa-rss"
       },
       {
-        path: "https://wj.qq.com/s2/3731207/f0cd/",
-        title: "联系我",
+        path: "https://www.houzhenni.com",
+        title: "主站",
         target: "_blank",
       }
     ];

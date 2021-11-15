@@ -1,6 +1,8 @@
-# nuxt-blog
+# nuxt-maupassant
 
 > Nuxt.js project
+
+A blog theme for Nuxt.js powered websites, based on original design of [pagecho](https://github.com/pagecho/maupassant/) and modification of [tufu9441](https://github.com/tufu9441/maupassant-hexo).
 
 ## Build Setup
 

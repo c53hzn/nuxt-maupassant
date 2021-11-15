@@ -14,7 +14,7 @@ module.exports = {
       { rel: 'shortcut icon', type: 'image/x-icon', href: myBase+'/favicon.ico' },
       { rel: 'icon', type: 'image/x-icon', href: myBase+'/favicon.ico' },
       { rel: 'stylesheet', href: myBase+'/css/font-Noto-Sans-SC.css' },
-      { rel: 'stylesheet', href: myBase+'/css/style.css?2021-10-09-2' },
+      { rel: 'stylesheet', href: myBase+'/css/style.css?2021-11-15' },
       { rel: 'stylesheet', href: myBase+'/font-awesome/css/font-awesome.min.css'},
     ],
   },
