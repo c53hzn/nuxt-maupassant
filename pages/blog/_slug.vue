@@ -68,12 +68,6 @@
           </nuxt-link>
         </div>
       </div>
-      <div id="comment">
-        <div class="loadCommentBtn" @click="loadDisqus">
-          <i class="fa fa-comment" aria-hidden="true"></i>
-          加载评论
-        </div>
-      </div>
     </main>
     <aside class="blog-side">
       <div class="side-unit">
@@ -105,7 +99,6 @@
 
 <script type="text/javascript">
 import zoompic from "../../plugins/zoompic";
-import disqus from "../../plugins/disqus";
 import getCategories from "~/utils/getCategories";
 import getLatest5 from "~/utils/getLatest5";
 
@@ -142,13 +135,6 @@ export default {
     });
   },
   methods: {
-    toggleSideNav() {
-      this.$refs.SideNav.toggle();
-    },
-    loadDisqus() {
-      document.getElementById("comment").innerHTML = "";
-      disqus("comment");
-    },
     loadCustomScripts() {
       var that = this;
       var w = window;
@@ -190,26 +176,6 @@ export default {
           aInH5Tags[t].style.display = "none";
         }
       }
-
-      function lazyLoadDisqus () {
-        let disqus = document.querySelectorAll('.loadCommentBtn')[0];
-        if (!disqus) return;
-        if (disqus.offsetTop <= window.innerHeight + document.documentElement.scrollTop) {
-          that.loadDisqus();
-        }
-      }
-      function throttle (delay, action) {
-        let last = 0;
-        return function () {
-          let now = new Date();
-          if (now - last > delay) {
-            action();
-            last = now;
-          }
-        }
-      }
-      lazyLoadDisqus();
-      window.onscroll = throttle(200, lazyLoadDisqus);
     }
   },
   head() {
