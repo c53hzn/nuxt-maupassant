@@ -11,7 +11,8 @@ export default async ($content, params, error) => {
   const lastPage = Math.ceil(totalArticles / perPage);
 
   // use the % (modulus) operator to get a whole remainder
-  const lastPageCount = totalArticles % perPage;
+  const lastPageCount = totalArticles % perPage == 0
+  ?perPage:totalArticles % perPage;
 
   const skipNumber = () => {
     if (currentPage === 1) {
