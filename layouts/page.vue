@@ -1,5 +1,6 @@
 <template>
   <div class="container-main">
+    <ForkOnGithub></ForkOnGithub>
     <Navigation></Navigation>
     <nuxt />
     <Footer></Footer>
@@ -9,11 +10,13 @@
 <script>
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import ForkOnGithub from '../components/Fork-On-Github';
 
 export default {
   components: {
     Navigation,
-    Footer
+    Footer,
+    ForkOnGithub
   }
 }
 </script>
