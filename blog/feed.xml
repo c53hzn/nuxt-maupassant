@@ -2,411 +2,411 @@
 <rss version="2.0">
     <channel>
         <title>My Blog</title>
-        <link>https://www.houzhenni.com/blog</link>
+        <link>https://www.houzhenni.com/nuxt-maupassant/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Wed, 01 Dec 2021 07:19:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Dec 2021 16:11:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[如何评价李云迪]]></title>
-            <link>https://www.houzhenni.com/blog/li-yundi</link>
-            <guid>https://www.houzhenni.com/blog/li-yundi</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/li-yundi</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/li-yundi</guid>
             <description><![CDATA[李云迪第二次因嫖娼被抓，热门综艺惨遭二次伤害，这个社会还有救吗？]]></description>
         </item>
         <item>
             <title><![CDATA[意识流不是这么用的——《天目危机》剧评]]></title>
-            <link>https://www.houzhenni.com/blog/tv-review-pandoras-box</link>
-            <guid>https://www.houzhenni.com/blog/tv-review-pandoras-box</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/tv-review-pandoras-box</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/tv-review-pandoras-box</guid>
             <description><![CDATA[意识能截停火车，意识能穿越时空，意识能把人送进异度空间，这还是我们认识的“意识”吗？]]></description>
         </item>
         <item>
             <title><![CDATA[Hong Kong Income Tax for Non-local Employees]]></title>
-            <link>https://www.houzhenni.com/blog/hongkong-income-tax-en</link>
-            <guid>https://www.houzhenni.com/blog/hongkong-income-tax-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-income-tax-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-income-tax-en</guid>
             <description><![CDATA[How do employees from the mainland pay taxes in Hong Kong? What are Salaries Tax, Provision Tax and Tax Refund?]]></description>
         </item>
         <item>
             <title><![CDATA[如何在香港交税]]></title>
-            <link>https://www.houzhenni.com/blog/hongkong-income-tax</link>
-            <guid>https://www.houzhenni.com/blog/hongkong-income-tax</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-income-tax</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-income-tax</guid>
             <description><![CDATA[在香港工作的内地居民如何交税？薪俸税、暂缴税、退税又是怎么回事？]]></description>
         </item>
         <item>
             <title><![CDATA[握不住的正义——《恶魔法官》剧评]]></title>
-            <link>https://www.houzhenni.com/blog/devil-judge</link>
-            <guid>https://www.houzhenni.com/blog/devil-judge</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/devil-judge</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/devil-judge</guid>
             <description><![CDATA[背负沉重过往的法官，通过操纵民意来实现自己的正义，这样做对吗？]]></description>
         </item>
         <item>
             <title><![CDATA[一些风景照]]></title>
-            <link>https://www.houzhenni.com/blog/landscape-photos</link>
-            <guid>https://www.houzhenni.com/blog/landscape-photos</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/landscape-photos</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/landscape-photos</guid>
             <description><![CDATA[树木花草天空云朵，都是极好的。]]></description>
         </item>
         <item>
             <title><![CDATA[疯狂的蜗牛]]></title>
-            <link>https://www.houzhenni.com/blog/crazy-snails</link>
-            <guid>https://www.houzhenni.com/blog/crazy-snails</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/crazy-snails</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/crazy-snails</guid>
             <description><![CDATA[“虐杀蜗牛”的“尖沙咀狂徒”已落网，我感觉自己刚通网。]]></description>
         </item>
         <item>
             <title><![CDATA[给发烫的手机快速降温]]></title>
-            <link>https://www.houzhenni.com/blog/cool-my-phone</link>
-            <guid>https://www.houzhenni.com/blog/cool-my-phone</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/cool-my-phone</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/cool-my-phone</guid>
             <description><![CDATA[用了4年的手机总是发烫，我的处理是这样的。]]></description>
         </item>
         <item>
             <title><![CDATA[如何在Excel内将一对多的两列分离成每行都是一对一的两列]]></title>
-            <link>https://www.houzhenni.com/blog/split-one-to-many-rows-to-one-to-one-rows</link>
-            <guid>https://www.houzhenni.com/blog/split-one-to-many-rows-to-one-to-one-rows</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/split-one-to-many-rows-to-one-to-one-rows</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/split-one-to-many-rows-to-one-to-one-rows</guid>
             <description><![CDATA[做数据交叉对照查询的时候，如果关键字挤在同一个单元格里，可以先将其分离出来变成多行，再进行查找。]]></description>
         </item>
         <item>
             <title><![CDATA[义字如刀——《手卷烟》影评]]></title>
-            <link>https://www.houzhenni.com/blog/hand-rolled-cigarette</link>
-            <guid>https://www.houzhenni.com/blog/hand-rolled-cigarette</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hand-rolled-cigarette</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hand-rolled-cigarette</guid>
             <description><![CDATA[一个非常讲义气的林家栋，如何拯救一个非常讲义气的自己？]]></description>
         </item>
         <item>
             <title><![CDATA[我去了九龙寨城遗址]]></title>
-            <link>https://www.houzhenni.com/blog/kowloon-walled-city</link>
-            <guid>https://www.houzhenni.com/blog/kowloon-walled-city</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/kowloon-walled-city</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/kowloon-walled-city</guid>
             <description><![CDATA[看了《城寨出来者》之后心里一直放不下，于是找到了2个我能去的拍摄地，一个是九龙寨城，一个是尖沙咀水警总部，探访了这两个已经没有了的地方。]]></description>
         </item>
         <item>
             <title><![CDATA[我用Vue仿了一个川普的个人版推特]]></title>
-            <link>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</link>
-            <guid>https://www.houzhenni.com/blog/from-the-desk-of-donald-j-trump</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/from-the-desk-of-donald-j-trump</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/from-the-desk-of-donald-j-trump</guid>
             <description><![CDATA[单机版推特，一个人的微博，美国前总统唐纳德·J·特朗普同款，你值得拥有。重点介绍九宫格图片的部分，学会了你也可以写一个微博APP。]]></description>
         </item>
         <item>
             <title><![CDATA[她不记得，他不放弃--《掟上今日子的备忘录》]]></title>
-            <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</link>
-            <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/memorandum-of-kyoko-okitegami</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/memorandum-of-kyoko-okitegami</guid>
             <description><![CDATA[本格推理/单元剧/Gakki+冈田将生/男主默默守候女主，都是我喜欢的要素呢~]]></description>
         </item>
         <item>
             <title><![CDATA[覚えない彼女、諦めらない彼ーー『掟上今日子の備忘録』]]></title>
-            <link>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</link>
-            <guid>https://www.houzhenni.com/blog/memorandum-of-kyoko-okitegami-jp</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/memorandum-of-kyoko-okitegami-jp</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/memorandum-of-kyoko-okitegami-jp</guid>
             <description><![CDATA[本格ミステリー/一話に一つの話/Gakki+岡田将生/知られない見守り、全部私の大好きな要素ですね~]]></description>
         </item>
         <item>
             <title><![CDATA[QQ远程 vs Teamviewer vs 谷歌Remotedesk vs WPS远程桌面]]></title>
-            <link>https://www.houzhenni.com/blog/remote-control-tool-comparison</link>
-            <guid>https://www.houzhenni.com/blog/remote-control-tool-comparison</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/remote-control-tool-comparison</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/remote-control-tool-comparison</guid>
             <description><![CDATA[我用过4个免费的远程软件，它们各有优劣，本文就算是个测评及推荐吧]]></description>
         </item>
         <item>
             <title><![CDATA[Vue开发的注意事项]]></title>
-            <link>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</link>
-            <guid>https://www.houzhenni.com/blog/points-to-notice-for-vue-development</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/points-to-notice-for-vue-development</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/points-to-notice-for-vue-development</guid>
             <description><![CDATA[父组件无法给子组件内嵌Vue表达式？无法绑定点击事件？无法传递布尔值？子组件不能改prop的值？原来这些应该这样写]]></description>
         </item>
         <item>
             <title><![CDATA[游戏实况推荐--渗透之C君]]></title>
-            <link>https://www.houzhenni.com/blog/horror-games</link>
-            <guid>https://www.houzhenni.com/blog/horror-games</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/horror-games</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/horror-games</guid>
             <description><![CDATA[不敢玩恐怖游戏但又心痒痒？剧情向游戏太长无暇尝试？试试云通关吧]]></description>
         </item>
         <item>
             <title><![CDATA[Create Bilingual Breadcrumbs component for Nuxt]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-breadcrumbs-bilingual-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-breadcrumbs-bilingual-en</guid>
             <description><![CDATA[I made a Chinese/ English Breadcrumbs component for my Nuxt website, the key point is to use a preset mapping rule. Also I learned about the communication between sibling components, it's worth my time.]]></description>
         </item>
         <item>
             <title><![CDATA[那些一听到就会泪流满面的音乐]]></title>
-            <link>https://www.houzhenni.com/blog/music-that-makes-you-cry</link>
-            <guid>https://www.houzhenni.com/blog/music-that-makes-you-cry</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/music-that-makes-you-cry</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/music-that-makes-you-cry</guid>
             <description><![CDATA[记录一下这些年在影视剧和各种地方听到过的会让人瞬间被带回那个情境的纯音乐和歌曲。]]></description>
         </item>
         <item>
             <title><![CDATA[新冠疫苗测评]]></title>
-            <link>https://www.houzhenni.com/blog/covid19-vaccine-review</link>
-            <guid>https://www.houzhenni.com/blog/covid19-vaccine-review</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/covid19-vaccine-review</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/covid19-vaccine-review</guid>
             <description><![CDATA[打了科兴的克尔来福新冠疫苗，昏睡了半天。]]></description>
         </item>
         <item>
             <title><![CDATA[如何制作中英双语的面包屑导航]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-breadcrumbs-bilingual</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-breadcrumbs-bilingual</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-breadcrumbs-bilingual</guid>
             <description><![CDATA[终于弄好了双语的面包屑导航，还学到了Vue的同级组件通信的知识，我还是很开心的。]]></description>
         </item>
         <item>
             <title><![CDATA[新路由器]]></title>
-            <link>https://www.houzhenni.com/blog/new-wifi-router-review</link>
-            <guid>https://www.houzhenni.com/blog/new-wifi-router-review</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/new-wifi-router-review</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/new-wifi-router-review</guid>
             <description><![CDATA[买了个华为的路由器，费了点劲才配置好。]]></description>
         </item>
         <item>
             <title><![CDATA[Build an E-Commerce website with Nuxt, Snipcart and Stripe]]></title>
-            <link>https://www.houzhenni.com/blog/build-ecommerce-website-with-nuxt-snipcart-stripe-en</link>
-            <guid>https://www.houzhenni.com/blog/build-ecommerce-website-with-nuxt-snipcart-stripe-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/build-ecommerce-website-with-nuxt-snipcart-stripe-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/build-ecommerce-website-with-nuxt-snipcart-stripe-en</guid>
             <description><![CDATA[You don't have a backend a and database, but still want to build a webstore? No problem! You can use Nuxt to build static website, Nuxt content to manage content and stock, Snipcart to manage orders and checkout functions, PayPal and Stripe to manage your funds.]]></description>
         </item>
         <item>
             <title><![CDATA[用nuxt、snipcart和stripe建立一个电商网站]]></title>
-            <link>https://www.houzhenni.com/blog/build-ecommerce-website-with-nuxt-snipcart-stripe</link>
-            <guid>https://www.houzhenni.com/blog/build-ecommerce-website-with-nuxt-snipcart-stripe</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/build-ecommerce-website-with-nuxt-snipcart-stripe</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/build-ecommerce-website-with-nuxt-snipcart-stripe</guid>
             <description><![CDATA[没有后台和数据库，静态网站也想做网店？完全没有问题。生成网站用nuxt，内容及产品管理用nuxt content，订单管理和结算功能用snipcart，收款用PayPal和stripe。从注册snipcart到功能上线，总共5小时搞定。]]></description>
         </item>
         <item>
             <title><![CDATA[游戏猫国建设者的外挂脚本]]></title>
-            <link>https://www.houzhenni.com/blog/kittens-game</link>
-            <guid>https://www.houzhenni.com/blog/kittens-game</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/kittens-game</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/kittens-game</guid>
             <description><![CDATA[最近从Chrome改用Edge，从Chrome导入了自己写的浏览器脚本外挂来玩游戏，然后这个按钮好像变得不太对劲？]]></description>
         </item>
         <item>
             <title><![CDATA[ASMR Video Recommendations]]></title>
-            <link>https://www.houzhenni.com/blog/asmr-recommendations-en</link>
-            <guid>https://www.houzhenni.com/blog/asmr-recommendations-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/asmr-recommendations-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/asmr-recommendations-en</guid>
             <description><![CDATA[ASMR videos are like a new world, let's see what we can find there.]]></description>
         </item>
         <item>
             <title><![CDATA[ASMR视频推荐]]></title>
-            <link>https://www.houzhenni.com/blog/asmr-recommendations</link>
-            <guid>https://www.houzhenni.com/blog/asmr-recommendations</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/asmr-recommendations</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/asmr-recommendations</guid>
             <description><![CDATA[自从喜欢上看ASMR视频，感觉仿佛新世界的大门打开了。]]></description>
         </item>
         <item>
             <title><![CDATA[我的2020年]]></title>
-            <link>https://www.houzhenni.com/blog/summary-of-my-life-in-2020</link>
-            <guid>https://www.houzhenni.com/blog/summary-of-my-life-in-2020</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/summary-of-my-life-in-2020</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/summary-of-my-life-in-2020</guid>
             <description><![CDATA[2020年真的是“被偷走的一年”，我好像除了年龄，什么都没有收获。]]></description>
         </item>
         <item>
             <title><![CDATA[2021年Nuxt新版本的一些限制]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-2021-limitations</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-2021-limitations</guid>
             <description><![CDATA[升级Nuxt到2.14.12之后，遇到了3个问题，这个新版本用起来有点不太顺手。]]></description>
         </item>
         <item>
             <title><![CDATA[Limitations of latest version Nuxt in 2021]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-2021-limitations-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-2021-limitations-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-2021-limitations-en</guid>
             <description><![CDATA[After updating to Nuxt 2.14.12, I encountered 3 problems, making the developing process a little difficult for me.]]></description>
         </item>
         <item>
             <title><![CDATA[使用Github Actions把Nuxt静态网站push到其他repository]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-blog-generate-files-n-push-to-another-repo</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-generate-files-n-push-to-another-repo</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-generate-files-n-push-to-another-repo</guid>
             <description><![CDATA[试了一下用GitHub Actions生成Nuxt静态博客，推送并发布到其他代码仓库，还是挺有意思的。]]></description>
         </item>
         <item>
             <title><![CDATA[Edge浏览器PDF朗读功能测评]]></title>
-            <link>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</link>
-            <guid>https://www.houzhenni.com/blog/get-pdf-read-aloud-on-edge</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/get-pdf-read-aloud-on-edge</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/get-pdf-read-aloud-on-edge</guid>
             <description><![CDATA[Edge浏览器有个朗读功能，可以朗读PDF或网页内容，中日英都可以，试用了一下感觉还行。]]></description>
         </item>
         <item>
             <title><![CDATA[如何用手机查看局域网内Express主机上的文件]]></title>
-            <link>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</link>
-            <guid>https://www.houzhenni.com/blog/view-pc-files-from-mobile-via-express-server</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/view-pc-files-from-mobile-via-express-server</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/view-pc-files-from-mobile-via-express-server</guid>
             <description><![CDATA[用电脑搭建Express服务器，然后手机直接看电脑上的文件和视频，好像挺有意思的？]]></description>
         </item>
         <item>
             <title><![CDATA[熊猫速汇(Panda Remit)测评]]></title>
-            <link>https://www.houzhenni.com/blog/panda-remit-review</link>
-            <guid>https://www.houzhenni.com/blog/panda-remit-review</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/panda-remit-review</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/panda-remit-review</guid>
             <description><![CDATA[试用了一下用熊猫速汇从我的香港银行卡汇款到大陆银行卡，感觉还行。]]></description>
         </item>
         <item>
             <title><![CDATA[如何找到明星同款背包]]></title>
-            <link>https://www.houzhenni.com/blog/bag-research</link>
-            <guid>https://www.houzhenni.com/blog/bag-research</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/bag-research</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/bag-research</guid>
             <description><![CDATA[最近很喜欢刘学义，所以尝试搜索了一下他背的同款背包，也算是用上了一些以往的工作经验。]]></description>
         </item>
         <item>
             <title><![CDATA[低配电脑能用什么视频剪辑软件]]></title>
-            <link>https://www.houzhenni.com/blog/filmora</link>
-            <guid>https://www.houzhenni.com/blog/filmora</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/filmora</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/filmora</guid>
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
-            <link>https://www.houzhenni.com/blog/online-research</link>
-            <guid>https://www.houzhenni.com/blog/online-research</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</guid>
             <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
         </item>
         <item>
             <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
-            <link>https://www.houzhenni.com/blog/destiny-of-shachiku</link>
-            <guid>https://www.houzhenni.com/blog/destiny-of-shachiku</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</guid>
             <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
-            <link>https://www.houzhenni.com/blog/little-animal-issue</link>
-            <guid>https://www.houzhenni.com/blog/little-animal-issue</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/little-animal-issue</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/little-animal-issue</guid>
             <description><![CDATA[站在食物链顶端的人类，还是无法与不请自来的“小动物”们和平相处啊。]]></description>
         </item>
         <item>
             <title><![CDATA[最近在追的电视剧]]></title>
-            <link>https://www.houzhenni.com/blog/tv-review-2020-1</link>
-            <guid>https://www.houzhenni.com/blog/tv-review-2020-1</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/tv-review-2020-1</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/tv-review-2020-1</guid>
             <description><![CDATA[最近主要追了两部剧，《恶之花》和《穿越火线》，不同风格的故事，带给我不同风格的收获。]]></description>
         </item>
         <item>
             <title><![CDATA[Deprived of rights, starting with her name]]></title>
-            <link>https://www.houzhenni.com/blog/stand-with-rowling-en</link>
-            <guid>https://www.houzhenni.com/blog/stand-with-rowling-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/stand-with-rowling-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/stand-with-rowling-en</guid>
             <description><![CDATA[J.K.Rowling was criticized by a bunch of people who have gained a lot from her works because she allegedly hurt the feelings of transgender women, but is she really that evil to deserve this?]]></description>
         </item>
         <item>
             <title><![CDATA[女性失权，从名字始——罗琳事件有感]]></title>
-            <link>https://www.houzhenni.com/blog/stand-with-rowling</link>
-            <guid>https://www.houzhenni.com/blog/stand-with-rowling</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/stand-with-rowling</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/stand-with-rowling</guid>
             <description><![CDATA[被群起而攻之的罗琳，真的罪大恶极吗？]]></description>
         </item>
         <item>
             <title><![CDATA[论室友关系]]></title>
-            <link>https://www.houzhenni.com/blog/roommate-relationship</link>
-            <guid>https://www.houzhenni.com/blog/roommate-relationship</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/roommate-relationship</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/roommate-relationship</guid>
             <description><![CDATA[合租这件事，实在是太考验个人智慧了。与人斗，其累无穷。]]></description>
         </item>
         <item>
             <title><![CDATA[How to enable spell check on Chrome]]></title>
-            <link>https://www.houzhenni.com/blog/enable-spellcheck-on-chrome-en</link>
-            <guid>https://www.houzhenni.com/blog/enable-spellcheck-on-chrome-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/enable-spellcheck-on-chrome-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/enable-spellcheck-on-chrome-en</guid>
             <description><![CDATA[My Chrome used to check spelling for me when typing, but recently the spellcheck isn't working normally. I thought it was something related to coding, but it turns out to be just a browser setting thing.]]></description>
         </item>
         <item>
             <title><![CDATA[Write a control panel for my API-based CMS for Nuxt]]></title>
-            <link>https://www.houzhenni.com/blog/editor-for-my-cms-of-my-nuxt-blog-en</link>
-            <guid>https://www.houzhenni.com/blog/editor-for-my-cms-of-my-nuxt-blog-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/editor-for-my-cms-of-my-nuxt-blog-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/editor-for-my-cms-of-my-nuxt-blog-en</guid>
             <description><![CDATA[April CMS, a CMS that operates text files and serves with both interface and API, built for serving blog contents, come and check it out~]]></description>
         </item>
         <item>
             <title><![CDATA[给Nuxt使用的基于API的CMS——还有管理后台呢]]></title>
-            <link>https://www.houzhenni.com/blog/editor-for-my-cms-of-my-nuxt-blog</link>
-            <guid>https://www.houzhenni.com/blog/editor-for-my-cms-of-my-nuxt-blog</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/editor-for-my-cms-of-my-nuxt-blog</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/editor-for-my-cms-of-my-nuxt-blog</guid>
             <description><![CDATA[April CMS，一个兼具Headless CMS和Flat File CMS的特征的操作文本文件的基于API提供内容的CMS，很实用的一个项目哦~]]></description>
         </item>
         <item>
             <title><![CDATA[Write a JavaScript script for Photoshop image batch processing]]></title>
-            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</link>
-            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/script-for-photoshop-bulk-resize-and-watermark-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/script-for-photoshop-bulk-resize-and-watermark-en</guid>
             <description><![CDATA[I made a JavaScript script to bulk resize image and canvas, then add watermark and save as new image, learnt a lot during this process.]]></description>
         </item>
         <item>
             <title><![CDATA[用JavaScript写一个Photoshop批处理脚本]]></title>
-            <link>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</link>
-            <guid>https://www.houzhenni.com/blog/script-for-photoshop-bulk-resize-and-watermark</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/script-for-photoshop-bulk-resize-and-watermark</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/script-for-photoshop-bulk-resize-and-watermark</guid>
             <description><![CDATA[我攒了一个可以在Photoshop里批量调整图像大小和画布大小、添加水印、另存为的JavaScript脚本，又学到了不少东西。]]></description>
         </item>
         <item>
             <title><![CDATA[How to build up a static blog website with Nuxt]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-blog-static-website-en</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-blog-static-website-en</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-static-website-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-static-website-en</guid>
             <description><![CDATA[I built up my website with Nuxt. First I created an API to parse Markdown articles and return JSON contents, and then used Nuxt+Axios to call this API to retrieve blog article and generate static pages based on this structure. Here you can see some details.]]></description>
         </item>
         <item>
             <title><![CDATA[专门安利一下《端脑》]]></title>
-            <link>https://www.houzhenni.com/blog/tv-drama-die-now</link>
-            <guid>https://www.houzhenni.com/blog/tv-drama-die-now</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/tv-drama-die-now</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/tv-drama-die-now</guid>
             <description><![CDATA[安利一个朱元冰主演的科幻悬疑剧《端脑》]]></description>
         </item>
         <item>
             <title><![CDATA[关于疫病的记忆]]></title>
-            <link>https://www.houzhenni.com/blog/memories-about-pandemics</link>
-            <guid>https://www.houzhenni.com/blog/memories-about-pandemics</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/memories-about-pandemics</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/memories-about-pandemics</guid>
             <description><![CDATA[2020年啊，不要再考验我了]]></description>
         </item>
         <item>
             <title><![CDATA[2019年的小总结]]></title>
-            <link>https://www.houzhenni.com/blog/summary-of-my-life-in-2019</link>
-            <guid>https://www.houzhenni.com/blog/summary-of-my-life-in-2019</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/summary-of-my-life-in-2019</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/summary-of-my-life-in-2019</guid>
             <description><![CDATA[我的2019年过得还算充实，看了很多剧，追了很多星，做了很多事，还学了很多东西，要继续保持。]]></description>
         </item>
         <item>
             <title><![CDATA[在Excel中用vlookup公式灵活查找数字或文本类型关键字]]></title>
-            <link>https://www.houzhenni.com/blog/why-vlookup-cannot-return-value</link>
-            <guid>https://www.houzhenni.com/blog/why-vlookup-cannot-return-value</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/why-vlookup-cannot-return-value</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/why-vlookup-cannot-return-value</guid>
             <description><![CDATA[VLOOKUP公式里的查找值必须和被查找区域的首列关键字为相同类型，否则会返回“#N/A”，如果查找值是引用过来的，类型不同，此时可以强行转换类型，即可使VLOOKUP公式生效]]></description>
         </item>
         <item>
             <title><![CDATA[沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感]]></title>
-            <link>https://www.houzhenni.com/blog/the-birth-of-the-drama-king</link>
-            <guid>https://www.houzhenni.com/blog/the-birth-of-the-drama-king</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/the-birth-of-the-drama-king</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/the-birth-of-the-drama-king</guid>
             <description><![CDATA[最近配套看完了另一部剧《少年江湖物语》和它的原著《如何错误地套路一个魔教教主》，导演为了过审竟然拆CP？Exo me？]]></description>
         </item>
         <item>
             <title><![CDATA[记忆中的食堂菜]]></title>
-            <link>https://www.houzhenni.com/blog/campus-canteen-memories</link>
-            <guid>https://www.houzhenni.com/blog/campus-canteen-memories</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/campus-canteen-memories</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/campus-canteen-memories</guid>
             <description><![CDATA[吃了一口南瓜之后，我仿佛立刻回到了第一次被炒南瓜支配的那一天。]]></description>
         </item>
         <item>
             <title><![CDATA[60天，指定幸存者]]></title>
-            <link>https://www.houzhenni.com/blog/designated-survivor</link>
-            <guid>https://www.houzhenni.com/blog/designated-survivor</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/designated-survivor</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/designated-survivor</guid>
             <description><![CDATA[学者当上内阁长官，不谙官场的他惨被革职，却因此幸存成为代理总统。在重重的危机之下，他能带领国家走出困境吗？]]></description>
         </item>
         <item>
             <title><![CDATA[校园霸凌团体F4的纯情恋爱物语——宝冢《流星花园》观后感]]></title>
-            <link>https://www.houzhenni.com/blog/boys-over-flowers</link>
-            <guid>https://www.houzhenni.com/blog/boys-over-flowers</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/boys-over-flowers</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/boys-over-flowers</guid>
             <description><![CDATA[F4明明是校园霸凌团体，可是人们遗忘了霸道总裁做的那些足够进监狱的过分行为，只记住了甜甜的恋爱，这样好像哪里不太对？]]></description>
         </item>
         <item>
             <title><![CDATA[人生初の宝塚歌劇鑑賞－－藤原鎌足の話を見ました]]></title>
-            <link>https://www.houzhenni.com/blog/takarazuka-musical-jp</link>
-            <guid>https://www.houzhenni.com/blog/takarazuka-musical-jp</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/takarazuka-musical-jp</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/takarazuka-musical-jp</guid>
             <description><![CDATA[宝塚の星組が出演した『鎌足−夢のまほろば、大和（やまと）し美（うるわ）し−』を見ました。生中継でしたけど、十分楽しかったです。]]></description>
         </item>
         <item>
             <title><![CDATA[如何减轻Nuxt打包生成的代码量]]></title>
-            <link>https://www.houzhenni.com/blog/lighten-nuxt-website</link>
-            <guid>https://www.houzhenni.com/blog/lighten-nuxt-website</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/lighten-nuxt-website</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/lighten-nuxt-website</guid>
             <description><![CDATA[Nuxt默认会将所有vue文件使用的模块打包进最后的网站文件，所以最好不要在博客页渲染Markdown]]></description>
         </item>
         <item>
             <title><![CDATA[如何使用Nuxt建立个人博客]]></title>
-            <link>https://www.houzhenni.com/blog/nuxt-blog-static-website</link>
-            <guid>https://www.houzhenni.com/blog/nuxt-blog-static-website</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-static-website</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/nuxt-blog-static-website</guid>
             <description><![CDATA[重构了一下博客，从Jekyll迁移到了Nuxt。方法是先用Node API 来解析 Markdown 文件，然后 Nuxt+Axios 获取 API 返回的文章内容并生成静态页面。]]></description>
         </item>
         <item>
             <title><![CDATA[韩剧观后感之《阿尔罕布拉宫的回忆》和《死也很好》]]></title>
-            <link>https://www.houzhenni.com/blog/memories-of-the-alhambra-n-feel-good-to-die</link>
-            <guid>https://www.houzhenni.com/blog/memories-of-the-alhambra-n-feel-good-to-die</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/memories-of-the-alhambra-n-feel-good-to-die</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/memories-of-the-alhambra-n-feel-good-to-die</guid>
             <description><![CDATA[看了十几年的韩剧，还是走不出套路]]></description>
         </item>
         <item>
             <title><![CDATA[阿尔罕布拉宫的回忆]]></title>
-            <link>https://www.houzhenni.com/blog/memories-of-the-alhambra</link>
-            <guid>https://www.houzhenni.com/blog/memories-of-the-alhambra</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/memories-of-the-alhambra</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/memories-of-the-alhambra</guid>
             <description><![CDATA[十年前偶然在音乐节目里听过一首曲子，这么久都没有再听到过，没想到在韩剧里听到了，而且它还是这部韩剧的标题。这个世界实在是太奇妙了]]></description>
         </item>
         <item>
             <title><![CDATA[我最喜欢的PC游戏——扫雷]]></title>
-            <link>https://www.houzhenni.com/blog/minesweeper</link>
-            <guid>https://www.houzhenni.com/blog/minesweeper</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/minesweeper</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/minesweeper</guid>
             <description><![CDATA[我之前用原生JavaScript、jQuery、微信小程序写过3个版本的扫雷游戏，当我体验过类似Vue的微信小程序之后，学习Vue好像是自然而然的事，于是我终于用Vue写出了最让我满意的一个版本的扫雷~]]></description>
         </item>
         <item>
             <title><![CDATA[添加元素平移效果的产品页面]]></title>
-            <link>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</link>
-            <guid>https://www.houzhenni.com/blog/product-landing-page-with-scroll-effects</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/product-landing-page-with-scroll-effects</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/product-landing-page-with-scroll-effects</guid>
             <description><![CDATA[之前做了不添加任何效果的产品页，这两天看苹果ipad pro的产品页，惊艳到不行，所以自己仿照做一个鼠标滚轮事件触发页面元素平移的版本，不过比较粗糙。]]></description>
         </item>
         <item>
             <title><![CDATA[社畜烛九之死——看《镇魂》有感]]></title>
-            <link>https://www.houzhenni.com/blog/death-of-a-nobody</link>
-            <guid>https://www.houzhenni.com/blog/death-of-a-nobody</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/death-of-a-nobody</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/death-of-a-nobody</guid>
             <description><![CDATA[你们在《镇魂》里看的都是甜甜的爱情，我却看到了社畜的悲哀。。。]]></description>
         </item>
         <item>
             <title><![CDATA[如何搭建静态个人博客]]></title>
-            <link>https://www.houzhenni.com/blog/jekyll-blog-static-website</link>
-            <guid>https://www.houzhenni.com/blog/jekyll-blog-static-website</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/jekyll-blog-static-website</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/jekyll-blog-static-website</guid>
             <description><![CDATA[我的个人博客 = Github代码托管 + Jekyll模板 + Godaddy域名 + Cloudflare安全认证 + disqus评论系统 + 反向代理访问disqus(墙内) + zoho自主域名邮箱]]></description>
         </item>
         <item>
             <title><![CDATA[记录一下解决Chrome主页被hao123劫持的过程]]></title>
-            <link>https://www.houzhenni.com/blog/hao123-issue</link>
-            <guid>https://www.houzhenni.com/blog/hao123-issue</guid>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hao123-issue</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hao123-issue</guid>
             <description><![CDATA[Chrome主页被hao123劫持了，该怎么办？]]></description>
         </item>
     </channel>
