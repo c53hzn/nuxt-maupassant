@@ -23,6 +23,12 @@
           <i v-if="link.target=='_blank'" class="fa fa-external-link"></i>
           </a>
         </li>
+        <li class="nav-link">
+          <a target="_blank" href="/blog/feed.xml" class="no-decor-link">
+            <i class="fa fa-rss"></i>
+            订阅
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -59,12 +65,6 @@ export default {
         title: "博客",
         target: "_self",
         fa_class: "fa-archive"
-      },
-      {
-        path: "/blog/feed.xml",
-        title: "订阅",
-        target: "_blank",
-        fa_class: "fa-rss"
       },
       {
         path: "https://www.houzhenni.com",

@@ -49,7 +49,7 @@
     </main>
     <aside class="blog-side">
       <div class="side-unit">
-        <p><i class="fa fa-archive"></i>&nbsp;归档</p>
+        <p><i class="fa fa-archive"></i>&nbsp;归档 ({{total}})</p>
         <hr>
         <ul class="year-list">
           <li v-for="(blogs,blog_arr_i) in blog_by_year" 
@@ -86,10 +86,15 @@ export default {
   async asyncData(context) {
     var blog_by_year = await getBlogByYear(context.$content);
     var categories = await getCategories(context.$content);
+    var total = 0;
+    blog_by_year.blog_by_year.map(function(a) {
+      total += a.length
+    });
 
     return { 
       blog_by_year: blog_by_year.blog_by_year,
-      categories: categories.categories
+      categories: categories.categories,
+      total
     };
   },
   head () {

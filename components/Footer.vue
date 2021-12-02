@@ -1,7 +1,7 @@
 <template>
   <footer>
     <p>Powered by Nuxt.js | Theme Maupassant <br>
-    	Re-designed by  
+    	Adapted by  
     	<a href="https://github.com/c53hzn" target="_blank" class="no-decor-link">
     		<strong>Jenny HOU</strong>
 	    	<i class="fa fa-github font-20"></i>

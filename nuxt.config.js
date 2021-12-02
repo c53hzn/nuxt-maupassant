@@ -45,7 +45,7 @@ module.exports = {
     }
   },
   feed() {
-    const baseUrlArticles = 'https://www.houzhenni.com/blog';
+    const baseUrlArticles = 'https://www.houzhenni.com/nuxt-maupassant/blog';
     const baseLinkFeedArticles = '/blog';
     const feedFormats = {
       rss: { type: 'rss2', file: 'feed.xml' },

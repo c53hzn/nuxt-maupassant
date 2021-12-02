@@ -1,0 +1,7 @@
+content:
+  - 2017年6月，用GitHub用户isnowfy所写的静态博客生成工具simple在GitHub pages上创建了个人博客网站，未使用自主域名。
+  - 2018年3月，网站改用GitHub用户qwtel所写的Jekyll主题Hydejack，仍然部署在GitHub pages上，并购买了自主域名houzhenni.com。
+  - 2019年5月，改用Vue的应用框架Nuxt制作博客网站，观摩了很多网站之后，最终自主设计了所有的UI界面，自己写了一个仅本地开发环境下可用的文章数据API接口，每次写了文章之后，在本机上生成静态文件，然后手动替换网站所在的代码仓库的文件并推送上GitHub。
+  - 2020年4月，将Nuxt网站使用的文章数据API分离出来，还做了文章书写页面的UI设计，做成了简易的CMS，起名叫“april-cms”。
+  - 2021年2月，停用自建文章数据API，改用Nuxt的CMS插件“Content”，开始使用GitHub的自动部署服务Actions，每次新写了文章之后，推送上GitHub，让GitHub自动生成静态文件并部署到主站所在的代码仓库。
+  - 2021年11月，参考Hexo主题Maupassant设计了Nuxt版本的主题Maupassant，发布在单独的代码仓库“nuxt-maupassant”，主站仍使用自主设计的主题。
