@@ -4,9 +4,51 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/nuxt-maupassant/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Thu, 02 Dec 2021 16:11:52 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Dec 2021 10:52:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[JoJo的奇妙冒险之星尘远征军:一边发刀一边整活]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/jojo-startdust-crusaders</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/jojo-startdust-crusaders</guid>
+            <description><![CDATA[整个星尘斗士基本上不是在发刀就是在整活，埃及篇尤其如此。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[JoJo主题曲：从家族命运到个人抗争]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/jojo-music</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/jojo-music</guid>
+            <description><![CDATA[《JoJo的奇妙冒险》真的是超棒的系列作品，画风虽然奇特，但是看习惯了还觉得挺有意思的。剧情就不必说了，连音乐也都是杰作。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[记录一下港康码系统的智障表现]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-health-code</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-health-code</guid>
+            <description><![CDATA[港康码系统上线，终于有了通关的迹象，我注册了港康码账号，然后发现这个系统实在是太智障了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How to log in to two GitHub accounts on the same computer at the same time]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/log-in-2-github-account-on-one-pc-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/log-in-2-github-account-on-one-pc-en</guid>
+            <description><![CDATA[After switching Git accounts, it was difficult to switch back, and the tutorials found on the Internet were all outdated. So I tried my own way. Log in to the Git terminal with 1 account, and download the GitHub desktop to log in to a second. This time it was fine.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[如何在同一台电脑上同时登入两个GitHub账号]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/log-in-2-github-account-on-one-pc</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/log-in-2-github-account-on-one-pc</guid>
+            <description><![CDATA[Git切换账号之后很难换回去，网上找到教程都失效了。于是我尝试Git终端登录一个，下载GitHub桌面版登录第二个，这次可以了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[用Nuxt自建一个微博]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/self-hosted-weibo</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/self-hosted-weibo</guid>
+            <description><![CDATA[用了11年的微博账号突然没了，于是我用GitHub自建了一个微博。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[《暗杀风暴》定档12月10日，影版暗黑者又将带来什么新故事？]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/movie-death-notice</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/movie-death-notice</guid>
+            <description><![CDATA[周浩晖的小说《死亡通知单》电影版将于12月10日上映，这次是由香港导演、香港演员一起创作的港版电影，到时候肯定能带来和内地剧版不一样的新体验。]]></description>
+        </item>
         <item>
             <title><![CDATA[如何评价李云迪]]></title>
             <link>https://www.houzhenni.com/nuxt-maupassant/blog/li-yundi</link>
