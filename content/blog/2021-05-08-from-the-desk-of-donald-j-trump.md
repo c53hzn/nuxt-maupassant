@@ -22,7 +22,7 @@ comments: true
 
 这个排版很清爽，配色也给人一种正式、商务的感觉。我一直想给我自己做一个发布放碎片式文字的单页面来着，那就照着这个整吧！
 
-成品在 [这里](https://www.houzhenni.com/desk)
+代码在 [这里](https://github.com/c53hzn/desk-twitter)
 
 ![desk](/img/blog/2021-05-08/001.png)
 

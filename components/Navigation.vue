@@ -70,6 +70,11 @@ export default {
         path: "https://www.houzhenni.com",
         title: "主站",
         target: "_blank",
+      },
+      {
+        path: "https://www.houzhenni.com/desk-weibo",
+        title: "短博客",
+        target: "_blank",
       }
     ];
 

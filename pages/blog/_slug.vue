@@ -1,106 +1,78 @@
 <template>
-  <div class="blog-wrap">
-    <main class="blog-main">
-      <h1 class="align-center article-title">{{blog.title}}</h1>
-      <p class="align-center">
-        <span class="blog-date">
-          <i class="fa fa-calendar "></i>
-          {{blog.date.substring(0,10)}}
+  <main class="blog-main">
+    <h1 class="align-center article-title">{{blog.title}}</h1>
+    <p class="align-center">
+      <span class="blog-date">
+        <i class="fa fa-calendar "></i>
+        {{blog.date.substring(0,10)}}
+      </span>
+      <nuxt-link :to="'/blog/language/' + blog.language">
+        <span class="blog-lang">
+          <i class="fa fa-language"></i>
+          {{blog.language}}
         </span>
-        <nuxt-link :to="'/blog/language/' + blog.language">
-          <span class="blog-lang">
-            <i class="fa fa-language"></i>
-            {{blog.language}}
-          </span>
+      </nuxt-link>
+    </p>
+    <p class="align-center">
+      <span v-for="(cat, index) in blog.categories" :key="index"
+      class="blog-cat">
+        <nuxt-link :to="'/blog/category/' + cat">
+          <i class="fa fa-folder-open"></i>
+          {{cat}}
         </nuxt-link>
-      </p>
-      <p class="align-center">
-        <span v-for="(cat, index) in blog.categories" :key="index"
-        class="blog-cat">
-          <nuxt-link :to="'/blog/category/' + cat">
-            <i class="fa fa-folder-open"></i>
-            {{cat}}
-          </nuxt-link>
-        </span>
-      </p>
-      <p class="blog-tags align-center">
-        <span v-for="(tag, index) in blog.tags" :key="index"
-        class="blog-tag">
-          <nuxt-link :to="'/blog/tag/' + tag">
-            <i class="fa fa-tag" style="color:inherit;"></i>
-            {{tag}}
-          </nuxt-link>
-        </span>
-      </p>
-      <p class="blog-desc" v-html="blog.description"></p>
-      <article>
-        <ul class="toc">
-          <li
-          v-for="link of blog.toc"
-          :class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
-          :key="link.id">
-            <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
-          </li>
-        </ul>
-        <nuxt-content :document="blog" class="markdown-body"/>
-      </article>
-      <div class="prev-next">
-        <div class="prev">
-          <nuxt-link v-if="blog.prev" 
-          :to="'/blog/'+blog.prev.slug" class="no-decor-link"
-          :title="blog.prev.description">
-            <span class="prev-next-arrow">
-              <i class="fa fa-long-arrow-left"></i>
-            </span>
-            <br>
-            <span class="title">{{blog.prev.title}}</span>
-          </nuxt-link>
-        </div>
-        <div class="next">
-          <nuxt-link v-if="blog.next" 
-          :to="'/blog/'+blog.next.slug" class="no-decor-link"
-          :title="blog.next.description">
-            <span class="prev-next-arrow">
-              <i class="fa fa-long-arrow-right"></i>
-            </span>
-            <br>
-            <span class="title">{{blog.next.title}}</span>
-          </nuxt-link>
-        </div>
+      </span>
+    </p>
+    <p class="blog-tags align-center">
+      <span v-for="(tag, index) in blog.tags" :key="index"
+      class="blog-tag">
+        <nuxt-link :to="'/blog/tag/' + tag">
+          <i class="fa fa-tag" style="color:inherit;"></i>
+          {{tag}}
+        </nuxt-link>
+      </span>
+    </p>
+    <p class="blog-desc" v-html="blog.description"></p>
+    <article>
+      <ul class="toc">
+        <li
+        v-for="link of blog.toc"
+        :class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
+        :key="link.id">
+          <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
+        </li>
+      </ul>
+      <nuxt-content :document="blog" class="markdown-body"/>
+    </article>
+    <div class="prev-next">
+      <div class="prev">
+        <nuxt-link v-if="blog.prev" 
+        :to="'/blog/'+blog.prev.slug" class="no-decor-link"
+        :title="blog.prev.description">
+          <span class="prev-next-arrow">
+            <i class="fa fa-long-arrow-left"></i>
+          </span>
+          <br>
+          <span class="title">{{blog.prev.title}}</span>
+        </nuxt-link>
       </div>
-    </main>
-    <aside class="blog-side">
-      <div class="side-unit">
-        <p><i class="fa fa-folder-open"></i>&nbsp;分类</p>
-        <hr>
-        <p>
-          <span class="blog-cat"
-           v-for="(cat, index) in categories" :key="index">
-             <nuxt-link :to="'/blog/category/' + cat.name">
-               <i class="fa fa-folder-open"></i>
-               {{cat.name}}: {{cat.len}}
-             </nuxt-link>
-         </span>
-        </p>
+      <div class="next">
+        <nuxt-link v-if="blog.next" 
+        :to="'/blog/'+blog.next.slug" class="no-decor-link"
+        :title="blog.next.description">
+          <span class="prev-next-arrow">
+            <i class="fa fa-long-arrow-right"></i>
+          </span>
+          <br>
+          <span class="title">{{blog.next.title}}</span>
+        </nuxt-link>
       </div>
-      <div class="side-unit">
-        <p><i class="fa fa-file-o"></i>&nbsp;最新文章</p>
-        <hr>
-        <p v-for="(blog, index) in latestBlog" :key="index">
-          <nuxt-link class="blog-link" :to="'/blog/' + blog.slug">
-           {{blog.title}}
-          </nuxt-link>
-        </p>
-      </div>
-    </aside>
-  </div>
+    </div>
+  </main>
 </template>
 
 
 <script type="text/javascript">
 import zoompic from "../../plugins/zoompic";
-import getCategories from "~/utils/getCategories";
-import getLatest5 from "~/utils/getLatest5";
 
 export default {
   layout: "post",
@@ -116,16 +88,11 @@ export default {
     blog.prev = prevNext[0];
     blog.next = prevNext[1];
 
-    var latestBlog = await getLatest5(context.$content);
-    var categories = await getCategories(context.$content);
-
     return {
       blog,
       mySlug,
       keywords: blog.keywords?blog.keywords:[],
       myBase: context.app.router.options.base,
-      latestBlog: latestBlog.latestBlog,
-      categories: categories.categories,
     };
   },
   mounted: function(){

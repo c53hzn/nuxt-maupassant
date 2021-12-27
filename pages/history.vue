@@ -1,68 +1,33 @@
 <template>
-  <div class="blog-wrap">
-    <main class="blog-main">
-      <div class="timeline-centered">
-        <div class="line"></div>
-        <div class="present">Past</div>
-        <div class="dot_tp"></div>
-        <div class="born">Now</div>
-        <div class="dot_bt"></div>
-        <div v-for="(item, i) in histories" :key="'num'+i"
-        class="timeline-entry">
-          <div class="timeline-entry-inner">
-            <div class="timeline-icon wow fadeInUp">
-              <span class="number">{{i+1}}</span>
-            </div>
-            <div class="timeline-label wow fadeInUp">
-              <span class="word">{{item}}</span>
-            </div>
+  <main class="blog-main">
+    <div class="timeline-centered">
+      <div class="line"></div>
+      <div class="present">Past</div>
+      <div class="dot_tp"></div>
+      <div class="born">Now</div>
+      <div class="dot_bt"></div>
+      <div v-for="(item, i) in histories" :key="'num'+i"
+      class="timeline-entry">
+        <div class="timeline-entry-inner">
+          <div class="timeline-icon wow fadeInUp">
+            <span class="timeline-number">{{i+1}}</span>
+          </div>
+          <div class="timeline-label wow fadeInUp">
+            <span class="word">{{item}}</span>
           </div>
         </div>
       </div>
-    </main>
-    <aside class="blog-side">
-      <div class="side-unit">
-        <p><i class="fa fa-folder-open"></i>&nbsp;分类</p>
-        <hr>
-        <p>
-          <span class="blog-cat"
-           v-for="(cat, index) in categories" :key="index">
-             <nuxt-link :to="'/blog/category/' + cat.name">
-               <i class="fa fa-folder-open"></i>
-               {{cat.name}}: {{cat.len}}
-             </nuxt-link>
-         </span>
-        </p>
-      </div>
-      <div class="side-unit">
-        <p><i class="fa fa-file-o"></i>&nbsp;最新文章</p>
-        <hr>
-        <p v-for="(blog, index) in latestBlog" :key="index">
-          <nuxt-link class="blog-link" :to="'/blog/' + blog.slug">
-           {{blog.title}}
-          </nuxt-link>
-        </p>
-      </div>
-    </aside> 
-  </div>
+    </div>
+  </main>
 </template>
 
 <script>
-import getCategories from "~/utils/getCategories";
-import getLatest5 from "~/utils/getLatest5";
-
 export default {
   layout: "page",
   async asyncData(context) {
     var that = this;
     var history = await context.$content('history').fetch();
-    // "desc" is "by descending order"
-    var latestBlog = await getLatest5(context.$content);
-    var categories = await getCategories(context.$content);
-
     return {
-      latestBlog: latestBlog.latestBlog,
-      categories: categories.categories,
       histories: history.content
     }
   },
@@ -191,7 +156,7 @@ export default {
   margin-top: -20px;
   margin-left: -9px;
 }
-span.number {
+span.timeline-number {
   font-style: italic;
   font-size: 20px;
   line-height: 0;

@@ -1,58 +1,29 @@
 <template>
-  <div class="blog-wrap">
-    <main class="blog-main">
-      <h1>
-        标签列表
-      </h1>
-      <p>
-        <span class="blog-tag">
-          <nuxt-link to="/blog">
-            <i class="fa fa-list" style="color:inherit;"></i>
-            所有文章
-          </nuxt-link>
-        </span>
-      </p>
-      <p>
-        <span class="blog-tag"
-         v-for="(tag, index) in tags" :key="index"><!--
-       --><nuxt-link :to="'/blog/tag/' + tag.name"><!--
-        --><i class="fa fa-tag" style="color:inherit;"></i><!--
-         -->{{tag.name}}: {{tag.len}}<!--
-       --></nuxt-link><!--
-     --></span>
-      </p>
-    </main>
-    <aside class="blog-side">
-      <div class="side-unit">
-        <p><i class="fa fa-folder-open"></i>&nbsp;分类</p>
-        <hr>
-        <p>
-          <span class="blog-cat"
-           v-for="(cat, index) in categories" :key="index">
-             <nuxt-link :to="'/blog/category/' + cat.name">
-               <i class="fa fa-folder-open"></i>
-               {{cat.name}}: {{cat.len}}
-             </nuxt-link>
-         </span>
-        </p>
-      </div>
-      <div class="side-unit">
-        <p><i class="fa fa-file-o"></i>&nbsp;最新文章</p>
-        <hr>
-        <p v-for="(blog, index) in latestBlog" :key="index">
-          <nuxt-link class="blog-link" :to="'/blog/' + blog.slug">
-           {{blog.title}}
-          </nuxt-link>
-        </p>
-      </div>
-    </aside> 
-  </div>
+  <main class="blog-main">
+    <h1>
+      标签列表
+    </h1>
+    <p>
+      <span class="blog-tag">
+        <nuxt-link to="/blog">
+          <i class="fa fa-list" style="color:inherit;"></i>
+          所有文章
+        </nuxt-link>
+      </span>
+    </p>
+    <p>
+      <span class="blog-tag"
+       v-for="(tag, index) in tags" :key="index"><!--
+     --><nuxt-link :to="'/blog/tag/' + tag.name"><!--
+      --><i class="fa fa-tag" style="color:inherit;"></i><!--
+       -->{{tag.name}}: {{tag.len}}<!--
+     --></nuxt-link><!--
+   --></span>
+    </p>
+  </main>
 </template>
 
 <script type="text/javascript">
-import getCategories from "~/utils/getCategories";
-import getLatest5 from "~/utils/getLatest5";
-
 export default {
   layout: "page",
   async asyncData(context) {
@@ -95,13 +66,8 @@ export default {
       };
     }
 
-    var latestBlog = await getLatest5(context.$content);
-    var categories = await getCategories(context.$content);
-
     return { 
-      tags,
-      latestBlog: latestBlog.latestBlog,
-      categories: categories.categories
+      tags
     };
   },
   head () {

@@ -1,6 +1,8 @@
 <template>
   <div class="page-container">
-    <span v-if="currentPage === 1" :class="disabledStyle">
+  	<div style="text-align: center;">第{{currentPage}}页，共{{totalPages}}页</div>
+  	<div class="pagination">
+  		<span v-if="currentPage === 1" :class="disabledStyle">
 		  首页
 		</span>
 
@@ -46,6 +48,7 @@
 		>
 		  尾页
 		</nuxt-link>
+  	</div>
   </div>
 </template>
 
@@ -83,12 +86,17 @@ export default {
         : this.totalPages;
     },
   },
+  // mounted() {
+  // 	console.log("totalPages="+this.totalPages)
+  // }
 };
 </script>
 
 <style>
 .page-container {
 	margin-top: 40px;
+}
+.pagination {
 	display: flex;
 	justify-content: space-between;
 }
