@@ -75,11 +75,13 @@ export default {
         path: "https://www.houzhenni.com",
         title: "主站",
         target: "otherSite",
+        fa_class: "fa-archive"
       },
       {
         path: "https://www.houzhenni.com/desk-weibo",
         title: "短博客",
         target: "otherSite",
+        fa_class: "fa-archive"
       }
     ];
 

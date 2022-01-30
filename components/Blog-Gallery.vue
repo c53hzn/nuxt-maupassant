@@ -25,7 +25,7 @@
         <p class="desc-tag">
           <span class="blog-gallery-desc">{{blog.description}}</span>
         </p>
-        <div style="float: left;padding-top: 8px;">
+        <div class="blog-gallery-tags">
           <span v-for="(tag, index) in blog.tags" :key="index"
           class="blog-tag">
             <nuxt-link :to="'/blog/tag/' + tag">
@@ -64,7 +64,7 @@ export default {
   margin: 0px auto;
 }
 .blog-gallery-unit {
-  margin: 0px 20px 10px 0px;
+  margin: 0px 20px 50px 0px;
 }
 .blog-gallery-inner h4 {
   margin-top: 0px;
@@ -109,14 +109,25 @@ export default {
   border: 1px solid silver;
   border-radius: 4px;
 }
+.blog-gallery-tags {
+  float: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 .read-more {
   padding: 4px 8px;
   font-size: 14px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  display: inline-block;
 }
 .read-more:hover {
   color: black;
   border-color: black;
+}
+@media all and (max-width: 768px) {
+  .blog-gallery-unit {
+    margin-right: 0px;
+  }
 }
 </style>
