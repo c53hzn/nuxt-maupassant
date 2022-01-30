@@ -15,10 +15,25 @@
             <i class="fa fa-calendar"></i>
             &nbsp;{{blog.date.substring(0,10)}}
           </span>
+          <nuxt-link :to="'/blog/language/' + blog.language">
+            <span class="blog-lang">
+              <i class="fa fa-language"></i>
+              {{blog.language}}
+            </span>
+          </nuxt-link>
         </div>
         <p class="desc-tag">
           <span class="blog-gallery-desc">{{blog.description}}</span>
         </p>
+        <div style="float: left;padding-top: 8px;">
+          <span v-for="(tag, index) in blog.tags" :key="index"
+          class="blog-tag">
+            <nuxt-link :to="'/blog/tag/' + tag">
+              <i class="fa fa-tag" style="color:inherit;"></i>
+              {{tag}}
+            </nuxt-link>
+          </span>
+        </div>
         <p class="align-right">
           <nuxt-link class="no-decor-link read-more" :to="'/blog/'+blog.slug">
             <span>阅读全文<i class="fa fa-angle-double-right"></i></span>
