@@ -12,15 +12,15 @@
       <ul class="nav-ul">
         <li class="nav-link" v-for="(link, index) in nav_links_zh"
         :key="index">
-          <nuxt-link v-if="!/http/.test(link.path)"
+          <nuxt-link v-if="link.target=='_self'"
           :to="link.path" class="no-decor-link">
             <i class="fa" :class="link.fa_class"></i>
             {{link.title}}
           </nuxt-link>
-          <a v-if="/http/.test(link.path)" target="_blank"
+          <a v-if="link.target=='_blank'" target="_blank"
           :href="link.path" class="no-decor-link">
             {{link.title}}
-          <i v-if="link.target=='_blank'" class="fa fa-external-link"></i>
+            <i class="fa fa-external-link"></i>
           </a>
         </li>
         <li class="nav-link">
