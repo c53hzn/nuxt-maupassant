@@ -111,7 +111,7 @@ export default {
 }
 .blog-gallery-tags {
   float: left;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 8px;
 }
 .read-more {
