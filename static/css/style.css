@@ -379,9 +379,9 @@ ul.year-list {
     width: 100%;
   }
   .side-unit {
-  	margin-left: 10px;
-    margin-right: 10px;
-  	padding-left: 10px;
-    padding-right: 10px;
+  	margin-left: 0px;
+    margin-right: 0px;
+  	padding-left: 0px;
+    padding-right: 0px;
   }
 }
