@@ -4,9 +4,63 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/nuxt-maupassant/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 20 Feb 2022 10:38:19 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Aug 2022 09:28:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[投什么资，不要投资]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/investment</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/investment</guid>
+            <description><![CDATA[强积金和保险都是坑。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[leetCode第1题Two Sum的JS解法]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/leetcode-01-two-sum-javascript-solution</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/leetcode-01-two-sum-javascript-solution</guid>
+            <description><![CDATA[加法的三个要素已知两个，那么第三个也很好找了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[leetCode第67题Add Binary的JS解法]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/leetcode-67-add-binary-javascript-solution</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/leetcode-67-add-binary-javascript-solution</guid>
+            <description><![CDATA[其实这题的重点不在于二进制和十进制的转换。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[批量下载图片的浏览器JavaScript脚本]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/js-script-batch-download-img</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/js-script-batch-download-img</guid>
+            <description><![CDATA[为了下载别人上传到WordPress.com的漫画，我写了一个浏览器脚本]]></description>
+        </item>
+        <item>
+            <title><![CDATA[在一台电脑上用两个GitHub账号]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/use-2-github-acc-on-pc</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/use-2-github-acc-on-pc</guid>
+            <description><![CDATA[要切换使用两个GitHub账号，Git终端实在搞不来，试一试用GitHub桌面版吧！]]></description>
+        </item>
+        <item>
+            <title><![CDATA[FoodPanda测评——能用，但不好用]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/foodpanda-hk-review</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/foodpanda-hk-review</guid>
+            <description><![CDATA[FoodPanda把我从自己做的黑暗料理中解救出来，这一点值得肯定，但是它需要改进的地方也不少。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[在vlookup中用数字和文本参数混合查找数据项]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/vlookup-number-text-multi-parameter</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/vlookup-number-text-multi-parameter</guid>
+            <description><![CDATA[三个参数查找数据，如果参数既有数字又有文本，如何快速匹配对照表的数据项呢？]]></description>
+        </item>
+        <item>
+            <title><![CDATA[推荐6首《银魂》的片头片尾主题曲]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/gintama-op-ed-recommendations</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/gintama-op-ed-recommendations</guid>
+            <description><![CDATA[花了2个月的时间看完了15年份的《银魂》动画和真人版电影，除了一些难忘的剧情之外，经常在我脑子里萦绕的就是那些独特的片头片尾曲了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2022香港疫情又起]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hong-kong-covid-2022</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hong-kong-covid-2022</guid>
+            <description><![CDATA[客户问我某问题啥时候能解决，我说不好，要是问香港疫情啥时候结束我还能说两句，我觉得2022年不太可能。]]></description>
+        </item>
         <item>
             <title><![CDATA[研究了一下《银魂》的茂茂将军，感叹一下无常的人生]]></title>
             <link>https://www.houzhenni.com/nuxt-maupassant/blog/gintama-shigeshige-and-tokugawa-iemochi</link>
@@ -272,16 +326,16 @@
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
-            <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
-            <link>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</link>
-            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</guid>
-            <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
-        </item>
-        <item>
             <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
             <link>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</link>
             <guid>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</guid>
             <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</guid>
+            <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>

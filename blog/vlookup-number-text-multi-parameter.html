@@ -1,0 +1,700 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>在vlookup中用数字和文本参数混合查找数据项 | Jenny的小站</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="date" name="date" content="2022-04-03"><meta data-n-head="ssr" data-hid="description" name="description" content="三个参数查找数据，如果参数既有数字又有文本，如何快速匹配对照表的数据项呢？"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content="技术,Excel,vlookup,WPS表格"><link data-n-head="ssr" rel="shortcut icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/nuxt-maupassant/favicon.ico"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/font-Noto-Sans-SC.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/style.css?2022-01-30-2"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/font-awesome/css/font-awesome.min.css"><link data-n-head="ssr" rel="stylesheet" href="/nuxt-maupassant/css/github-markdown.min.css"><script data-n-head="ssr" src="/js/statcounter.js?2021-12-01"></script><script data-n-head="ssr" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-2790001673900763" async></script><base href="/nuxt-maupassant/"><link rel="preload" href="/nuxt-maupassant/_nuxt/e56210036ee184f730c6.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/902d179220aaae6152d7.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/c34d538ba398a5dd917f.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/b829557eb76e02942654.js" as="script"><link rel="preload" href="/nuxt-maupassant/_nuxt/20584c78e0a01c821a09.js" as="script"><style data-vue-ssr-id="638ca560:0 3191d5ad:0 5c5397e2:0 72520070:0">code[class*=language-],pre[class*=language-]{color:#393a34;font-family:Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;font-size:.9em;line-height:1.2em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre>code[class*=language-]{font-size:1em}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;background-color:#f3f3f3}:not(pre)>code[class*=language-]{padding:1px .2em;background:#f3f3f3;border:1px solid #ddd}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998;font-style:italic}.token.namespace{opacity:.7}.token.attr-value,.token.string{color:#e3116c}.token.operator,.token.punctuation{color:#393a34}.token.boolean,.token.constant,.token.entity,.token.inserted,.token.number,.token.property,.token.regex,.token.symbol,.token.url,.token.variable{color:#36acaa}.language-autohotkey .token.selector,.token.atrule,.token.attr-name,.token.keyword{color:#00a4db}.language-autohotkey .token.tag,.token.deleted,.token.function{color:#9a050f}.language-autohotkey .token.keyword,.token.selector,.token.tag{color:#00009f}.token.bold,.token.function,.token.important{font-weight:700}.token.italic{font-style:italic}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#3b8070;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:700;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:.5s}#forkongithub a:hover{background:#c11;color:#fff}#forkongithub a:after,#forkongithub a:before{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff}#forkongithub a:after{bottom:1px;top:auto}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999}#forkongithub a{width:238px;position:absolute;top:38px;right:-60px;transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,.8)}}.nuxt-content{margin-bottom:50px;text-align:justify;word-break:break-all}.nuxt-content h2{margin:9px 0;padding:9px 0}.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:8px 0;padding:0}.nuxt-content h2,.nuxt-content h3{border-bottom:1px solid silver}.nuxt-content h2{font-size:30px}.nuxt-content h3{font-size:26px}.nuxt-content h4{font-size:24px}.nuxt-content h5{font-size:20px}.nuxt-content p{line-height:24px}.nuxt-content ol{padding-right:18px}.nuxt-content li{line-height:24px}.nuxt-content iframe{margin:0 20px}.nuxt-content iframe.youtube{margin:8px auto 8px 20px;width:480px;height:360px;display:block}.nuxt-content blockquote{margin:16px 0;padding:10px;color:#6a737d;background-color:#f8f8f8;border-left:.25em solid #dfe2e5}.nuxt-content a,.toc a,.toc a:active,.toc a:visited{color:#000;font-weight:700;text-decoration:underline;border:none}.nuxt-content a:hover,.toc a:hover{color:grey}li.toc3{list-style:circle;margin-left:15px}a#comment-link{top:0}.blog-desc{margin:10px 0;padding:10px;color:#666;background-color:rgba(0,0,0,.025)}#disqus_thread{margin-top:20px}.prev-next{margin:20px auto;display:flex;justify-content:space-between}.prev-next a{display:block}.next,.prev{max-width:42%;color:grey;cursor:pointer}.prev{text-align:left}.next{text-align:right}.next:hover,.prev:hover{color:#000}.prev-next-arrow{font-size:28px}#comment{margin:40px 0 0;text-align:center}.loadCommentBtn{margin-bottom:20px;cursor:pointer;display:inline-block}.loadCommentBtn:hover{color:grey}@media (max-width:768px){.nuxt-content h2,.nuxt-content h3,.nuxt-content h4,.nuxt-content h5{margin:9px 0}.nuxt-content blockquote{margin:16px 0}.nuxt-content iframe{margin:0}.nuxt-content iframe.youtube{margin:8px auto;width:100%}.nuxt-content ul{padding-left:20px}.nuxt-content pre{margin-left:0;margin-right:0}.next,.prev{margin:0}#comment{margin:40px 0 0}}@media (max-width:539px){.nuxt-content iframe.youtube{height:auto}}</style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="container-main"><span id="forkongithub"><a target="_blank" href="https://github.com/c53hzn/nuxt-maupassant">Fork me on GitHub</a></span> <nav><div class="nav-wrap"><header><a href="/nuxt-maupassant/" class="no-decor-link nav-home nuxt-link-active">
+        Jenny's Blog
+      </a> <div class="nav-subtitle">
+        多学多想
+      </div></header> <ul class="nav-ul"><li class="nav-link"><a href="/nuxt-maupassant/" class="no-decor-link nuxt-link-active"><i class="fa fa-list"></i>
+          首页
+        </a> <!----> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/about" class="no-decor-link"><i class="fa fa-user"></i>
+          关于
+        </a> <!----> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/history" class="no-decor-link"><i class="fa fa-book"></i>
+          历史
+        </a> <!----> <!----></li><li class="nav-link"><a href="/nuxt-maupassant/blog" class="no-decor-link nuxt-link-active"><i class="fa fa-archive"></i>
+          博客
+        </a> <!----> <!----></li><li class="nav-link"><!----> <a href="https://www.houzhenni.com" class="no-decor-link"><i class="fa fa-home"></i>
+          主站
+        </a> <!----></li><li class="nav-link"><!----> <a href="https://www.houzhenni.com/desk-weibo" class="no-decor-link"><i class="fa fa-weibo"></i>
+          短博客
+        </a> <!----></li> <li class="nav-link"><a target="_blank" href="/blog/feed.xml" class="no-decor-link"><i class="fa fa-rss"></i>
+          订阅
+        </a></li></ul></div></nav> <div class="blog-wrap"><main class="blog-main"><h1 class="align-center article-title">在vlookup中用数字和文本参数混合查找数据项</h1> <p class="align-center"><span class="blog-date"><i class="fa fa-calendar"></i>
+      2022-04-03
+    </span> <a href="/nuxt-maupassant/blog/language/中文"><span class="blog-lang"><i class="fa fa-language"></i>
+        中文
+      </span></a></p> <p class="align-center"><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+        技术
+      </a></span></p> <p class="blog-tags align-center"><span class="blog-tag"><a href="/nuxt-maupassant/blog/tag/Excel"><i class="fa fa-tag" style="color:inherit"></i>
+        Excel
+      </a></span><span class="blog-tag"><a href="/nuxt-maupassant/blog/tag/vlookup"><i class="fa fa-tag" style="color:inherit"></i>
+        vlookup
+      </a></span></p> <p class="blog-desc">三个参数查找数据，如果参数既有数字又有文本，如何快速匹配对照表的数据项呢？</p> <article><ul class="toc"><li class="toc2"><a href="/nuxt-maupassant/blog/vlookup-number-text-multi-parameter#题目按年龄工龄学历计算工资">题目:按年龄工龄学历计算工资</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/vlookup-number-text-multi-parameter#在给定的数值范围内查找数字">在给定的数值范围内查找数字</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/vlookup-number-text-multi-parameter#查找文本">查找文本</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/vlookup-number-text-multi-parameter#混合查找数字和文本">混合查找数字和文本</a></li><li class="toc2"><a href="/nuxt-maupassant/blog/vlookup-number-text-multi-parameter#最终表格预览">最终表格预览</a></li></ul> <div class="markdown-body nuxt-content"><h2 id="题目按年龄工龄学历计算工资"><a aria-hidden="true" href="#%E9%A2%98%E7%9B%AE%E6%8C%89%E5%B9%B4%E9%BE%84%E5%B7%A5%E9%BE%84%E5%AD%A6%E5%8E%86%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84" tabindex="-1"><span class="icon icon-link"></span></a>题目:按年龄工龄学历计算工资</h2>
+<p>假设有这么一份工资等级对照表，先不管它是否科学，总之有这么个对照表。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>年龄</th><th>工龄</th><th>学历</th><th>工资</th></tr></thead><tbody><tr><td>21~30</td><td>0~5</td><td>本科以下</td><td>2000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>2500</td></tr><tr><td></td><td>6~10</td><td>本科以下</td><td>3000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>3500</td></tr><tr><td></td><td>10+</td><td>本科以下</td><td>4000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>4500</td></tr><tr><td>31~40</td><td>0~5</td><td>本科以下</td><td>3000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>3500</td></tr><tr><td></td><td>6~10</td><td>本科以下</td><td>4000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>4500</td></tr><tr><td></td><td>10+</td><td>本科以下</td><td>5000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>5500</td></tr><tr><td>41~50</td><td>0~5</td><td>本科以下</td><td>4000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>4500</td></tr><tr><td></td><td>6~10</td><td>本科以下</td><td>5000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>5500</td></tr><tr><td></td><td>10+</td><td>本科以下</td><td>6000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>6500</td></tr><tr><td>51~60</td><td>0~5</td><td>本科以下</td><td>5000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>5500</td></tr><tr><td></td><td>6~10</td><td>本科以下</td><td>6000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>6500</td></tr><tr><td></td><td>10+</td><td>本科以下</td><td>7000</td></tr><tr><td></td><td></td><td>本科及以上</td><td>7500</td></tr></tbody></table>
+<p>以及这么一份员工名单，麻烦你算一下工资。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>工号</td><td>姓名</td><td>年龄</td><td>工龄</td><td>学历</td><td>工资</td></tr><tr><td>SCREW001</td><td>王菲</td><td>34</td><td>8</td><td>本科</td><td>?</td></tr><tr><td>SCREW002</td><td>刘德华</td><td>59</td><td>23</td><td>小学</td><td>?</td></tr><tr><td>SCREW003</td><td>金城武</td><td>56</td><td>15</td><td>初中</td><td>?</td></tr><tr><td>SCREW004</td><td>黎明</td><td>42</td><td>20</td><td>高中</td><td>?</td></tr><tr><td>SCREW005</td><td>郭富城</td><td>21</td><td>0</td><td>硕士</td><td>?</td></tr><tr><td>SCREW006</td><td>佘诗曼</td><td>58</td><td>24</td><td>博士</td><td>?</td></tr><tr><td>SCREW007</td><td>黄晓明</td><td>48</td><td>10</td><td>本科</td><td>?</td></tr><tr><td>SCREW008</td><td>袁弘</td><td>27</td><td>7</td><td>小学</td><td>?</td></tr><tr><td>SCREW009</td><td>张歆艺</td><td>39</td><td>15</td><td>初中</td><td>?</td></tr><tr><td>SCREW010</td><td>张艺兴</td><td>22</td><td>1</td><td>初中</td><td>?</td></tr><tr><td>SCREW011</td><td>张涵予</td><td>42</td><td>22</td><td>高中</td><td>?</td></tr><tr><td>SCREW012</td><td>张雨绮</td><td>54</td><td>30</td><td>大专</td><td>?</td></tr><tr><td>SCREW013</td><td>刘涛</td><td>32</td><td>4</td><td>本科</td><td>?</td></tr><tr><td>SCREW014</td><td>刘敏涛</td><td>28</td><td>7</td><td>小学</td><td>?</td></tr><tr><td>SCREW015</td><td>胡歌</td><td>25</td><td>1</td><td>大专</td><td>?</td></tr><tr><td>SCREW016</td><td>靳东</td><td>36</td><td>6</td><td>本科</td><td>?</td></tr><tr><td>SCREW017</td><td>王凯</td><td>44</td><td>13</td><td>高中</td><td>?</td></tr><tr><td>SCREW018</td><td>刘学义</td><td>31</td><td>9</td><td>本科</td><td>?</td></tr><tr><td>SCREW019</td><td>檀健次</td><td>23</td><td>0</td><td>高中</td><td>?</td></tr><tr><td>SCREW020</td><td>陆展博</td><td>46</td><td>25</td><td>硕士</td><td>?</td></tr><tr><td>SCREW021</td><td>金世佳</td><td>42</td><td>16</td><td>博士</td><td>?</td></tr><tr><td>SCREW022</td><td>胡一菲</td><td>34</td><td>7</td><td>硕士</td><td>?</td></tr><tr><td>SCREW023</td><td>张伟</td><td>60</td><td>30</td><td>博士</td><td>?</td></tr><tr><td>SCREW024</td><td>福尔康</td><td>36</td><td>16</td><td>大专</td><td>?</td></tr></tbody></table>
+<p>平常用VLOOKUP查找的时候，只能查找一个参数，但是这里有三个参数，而且既有数字又有文本，那么怎样才能同时查找这么多参数呢？</p>
+<p>其实无法一次做到的哈，但我们可以把它分解一下，从年龄、工龄的数字变成相应的等级文本，再组合起来，变成只查找一个文本参数，这样就行了。</p>
+<h2 id="在给定的数值范围内查找数字"><a aria-hidden="true" href="#%E5%9C%A8%E7%BB%99%E5%AE%9A%E7%9A%84%E6%95%B0%E5%80%BC%E8%8C%83%E5%9B%B4%E5%86%85%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97" tabindex="-1"><span class="icon icon-link"></span></a>在给定的数值范围内查找数字</h2>
+<p>我们先来查找年龄和工龄，此时需要手工做2个等级对照表</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>G</th><th>H</th></tr></thead><tbody><tr><td>年龄</td><td>年龄等级</td></tr><tr><td>21</td><td>21~30</td></tr><tr><td>31</td><td>31~40</td></tr><tr><td>41</td><td>41~50</td></tr><tr><td>51</td><td>51~60</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>I</th><th>J</th></tr></thead><tbody><tr><td>0</td><td>0~5</td></tr><tr><td>6</td><td>6~10</td></tr><tr><td>11</td><td>10+</td></tr></tbody></table>
+<p><strong>小贴士</strong> : VOOKUP里面查找数值范围的时候，公式里的第四个参数要为 <code>TRUE</code>。</p>
+<p>查找年龄等级的公式 <code>=VLOOKUP(C2,G:H,2,TRUE)</code></p>
+<p>查找工龄等级的公式 <code>=VLOOKUP(D2,I:J,2,TRUE)</code></p>
+<h2 id="查找文本"><a aria-hidden="true" href="#%E6%9F%A5%E6%89%BE%E6%96%87%E6%9C%AC" tabindex="-1"><span class="icon icon-link"></span></a>查找文本</h2>
+<p>现在需要查找学历等级，我们手工做一个等级对照表</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>K</th><th>L</th></tr></thead><tbody><tr><td>学历</td><td>学历等级</td></tr><tr><td>小学</td><td>本科以下</td></tr><tr><td>初中</td><td>本科以下</td></tr><tr><td>高中</td><td>本科以下</td></tr><tr><td>大专</td><td>本科以下</td></tr><tr><td>本科</td><td>本科及以上</td></tr><tr><td>硕士</td><td>本科及以上</td></tr><tr><td>博士</td><td>本科及以上</td></tr></tbody></table>
+<p><strong>小贴士</strong> : VOOKUP里面查找文本的时候，如果不想被近似数据干扰，公式里的第四个参数要为 <code>FALSE</code>。</p>
+<p>查找学历等级的公式 <code>=VLOOKUP(E2,K:L,2,FALSE)</code></p>
+<h2 id="混合查找数字和文本"><a aria-hidden="true" href="#%E6%B7%B7%E5%90%88%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97%E5%92%8C%E6%96%87%E6%9C%AC" tabindex="-1"><span class="icon icon-link"></span></a>混合查找数字和文本</h2>
+<p>这时候我们需要再手工做一个综合工资等级对照表。</p>
+<p>先把原来的工资等级对照表里的空栏填满之后，在右边新建一个辅助列，然后在公式里用 <code>&</code> 符号得出的组合后的文本，由于有些数字连起来之后比较难辨认，而且可能影响Excel处理，建议用符号进行分隔，比如括号。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr><td>年龄</td><td>工龄</td><td>学历</td><td>工资</td><td>组合公式</td></tr><tr><td>20~30</td><td>0~5</td><td>本科以下</td><td>2000</td><td>="("&A2&")("&B2&")("&C2&")"</td></tr></tbody></table>
+<p>然后把结果粘贴到前面的年龄和工资等级对照表之后</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>M</th><th>N</th></tr></thead><tbody><tr><td>对照表组合</td><td>工资</td></tr><tr><td>(20~30)(0~5)(本科以下)</td><td>2000</td></tr><tr><td>(20~30)(0~5)(本科及以上)</td><td>2500</td></tr><tr><td>(20~30)(6~10)(本科以下)</td><td>3000</td></tr><tr><td>(20~30)(6~10)(本科及以上)</td><td>3500</td></tr><tr><td>(20~30)(10+)(本科以下)</td><td>4000</td></tr><tr><td>(20~30)(10+)(本科及以上)</td><td>4500</td></tr><tr><td>(31~40)(0~5)(本科以下)</td><td>3000</td></tr><tr><td>(31~40)(0~5)(本科及以上)</td><td>3500</td></tr><tr><td>(31~40)(6~10)(本科以下)</td><td>4000</td></tr><tr><td>(31~40)(6~10)(本科及以上)</td><td>4500</td></tr><tr><td>(31~40)(10+)(本科以下)</td><td>5000</td></tr><tr><td>(31~40)(10+)(本科及以上)</td><td>5500</td></tr><tr><td>(41~50)(0~5)(本科以下)</td><td>4000</td></tr><tr><td>(41~50)(0~5)(本科及以上)</td><td>4500</td></tr><tr><td>(41~50)(6~10)(本科以下)</td><td>5000</td></tr><tr><td>(41~50)(6~10)(本科及以上)</td><td>5500</td></tr><tr><td>(41~50)(10+)(本科以下)</td><td>6000</td></tr><tr><td>(41~50)(10+)(本科及以上)</td><td>6500</td></tr><tr><td>(51~60)(0~5)(本科以下)</td><td>5000</td></tr><tr><td>(51~60)(0~5)(本科及以上)</td><td>5500</td></tr><tr><td>(51~60)(6~10)(本科以下)</td><td>6000</td></tr><tr><td>(51~60)(6~10)(本科及以上)</td><td>6500</td></tr><tr><td>(51~60)(10+)(本科以下)</td><td>7000</td></tr><tr><td>(51~60)(10+)(本科及以上)</td><td>7500</td></tr></tbody></table>
+<p>然后我们来写最终的计算工资的公式</p>
+<p>F2 内填入的公式为</p>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>=VLOOKUP("("&VLOOKUP(C2,G:H,2,TRUE)&")("&VLOOKUP(D2,I:J,2,TRUE)&")("&VLOOKUP(E2,K:L,2,FALSE)&")",M:N,2,TRUE)
+</code></pre></div>
+<h2 id="最终表格预览"><a aria-hidden="true" href="#%E6%9C%80%E7%BB%88%E8%A1%A8%E6%A0%BC%E9%A2%84%E8%A7%88" tabindex="-1"><span class="icon icon-link"></span></a>最终表格预览</h2>
+<p>做好的表格是这样的</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/30020736/161419314-8a6d16e5-9cb5-494b-a670-3c684f318141.png"></p>
+<p>你可以先保存成Excel模板，然后把公式保存成值，再删除辅助列，另存为交给领导的最终表格，这次的任务就完成啦！</p>
+<p>下次再需要计算同样要求的工资表的时候，就可以直接打开Excel模板进行套用了，非常方便。</p></div></article> <div class="prev-next"><div class="prev"><a href="/nuxt-maupassant/blog/gintama-op-ed-recommendations" title="花了2个月的时间看完了15年份的《银魂》动画和真人版电影，除了一些难忘的剧情之外，经常在我脑子里萦绕的就是那些独特的片头片尾曲了。" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-left"></i></span> <br> <span class="title">推荐6首《银魂》的片头片尾主题曲</span></a></div> <div class="next"><a href="/nuxt-maupassant/blog/foodpanda-hk-review" title="FoodPanda把我从自己做的黑暗料理中解救出来，这一点值得肯定，但是它需要改进的地方也不少。" class="no-decor-link"><span class="prev-next-arrow"><i class="fa fa-long-arrow-right"></i></span> <br> <span class="title">FoodPanda测评——能用，但不好用</span></a></div></div></main> <aside data-fetch-key="0" class="blog-side"><div class="side-unit"><p><i class="fa fa-folder-open"></i> 分类</p> <hr> <p><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/日常"><i class="fa fa-folder-open"></i>
+           日常: 14
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/技术"><i class="fa fa-folder-open"></i>
+           技术: 28
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/测评"><i class="fa fa-folder-open"></i>
+           测评: 5
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/推荐"><i class="fa fa-folder-open"></i>
+           推荐: 4
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/剧评"><i class="fa fa-folder-open"></i>
+           剧评: 21
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/时评"><i class="fa fa-folder-open"></i>
+           时评: 3
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Lifestyle"><i class="fa fa-folder-open"></i>
+           Lifestyle: 1
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/相册"><i class="fa fa-folder-open"></i>
+           相册: 2
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/游记"><i class="fa fa-folder-open"></i>
+           游记: 2
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Tech"><i class="fa fa-folder-open"></i>
+           Tech: 7
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Review"><i class="fa fa-folder-open"></i>
+           Review: 1
+         </a></span><span class="blog-cat"><a href="/nuxt-maupassant/blog/category/Commentary"><i class="fa fa-folder-open"></i>
+           Commentary: 1
+         </a></span></p></div> <div class="side-unit"><p><i class="fa fa-file-o"></i> 最新文章</p> <hr> <p><a href="/nuxt-maupassant/blog/investment" class="blog-link">
+       投什么资，不要投资
+      </a></p><p><a href="/nuxt-maupassant/blog/leetcode-01-two-sum-javascript-solution" class="blog-link">
+       leetCode第1题Two Sum的JS解法
+      </a></p><p><a href="/nuxt-maupassant/blog/leetcode-67-add-binary-javascript-solution" class="blog-link">
+       leetCode第67题Add Binary的JS解法
+      </a></p><p><a href="/nuxt-maupassant/blog/js-script-batch-download-img" class="blog-link">
+       批量下载图片的浏览器JavaScript脚本
+      </a></p><p><a href="/nuxt-maupassant/blog/use-2-github-acc-on-pc" class="blog-link">
+       在一台电脑上用两个GitHub账号
+      </a></p></div> <div class="side-unit"><p><i class="fa fa-external-link"></i> 友情链接</p> <hr> <p><a href="https://www.baidu.com" target="_blank" class="blog-link">百度</a></p><p><a href="https://www.google.com" target="_blank" class="blog-link">谷歌</a></p><p><a href="https://www.bing.com" target="_blank" class="blog-link">必应</a></p><p><a href="https://www.qq.com" target="_blank" class="blog-link">腾讯</a></p></div></aside></div> <footer><p>Powered by Nuxt.js | Theme Maupassant <br>
+    	Adapted by  
+    	<a href="https://github.com/c53hzn" target="_blank" class="no-decor-link"><strong>Jenny HOU</strong> <i class="fa fa-github font-20"></i></a></p> <div class="go-top go-top-hidden"><div class="arrow"></div> <div class="stick"></div></div></footer></div></div></div><script>window.__NUXT__=function(e,p,t,n,r,a,l,y,i,d,o,s,c,g,h,u,v,E,m,C,A,S,R,B,x,b,W,w,O,U,f,L,P,K,T,F,H,N,V,k,I,D,J,G,_,j,q,M,Z,X,z,Q,Y){return X[0]="WPS表格",{layout:"post",data:[{blog:{slug:Z,description:"三个参数查找数据，如果参数既有数字又有文本，如何快速匹配对照表的数据项呢？",date:"2022-04-03T00:00:00.000Z",language:"中文",title:"在vlookup中用数字和文本参数混合查找数据项",categories:["技术"],tags:["Excel","vlookup"],keywords:X,comments:!0,toc:[{id:z,depth:2,text:Q},{id:U,depth:2,text:U},{id:f,depth:2,text:f},{id:L,depth:2,text:L},{id:P,depth:2,text:P}],body:{type:"root",children:[{type:e,tag:A,props:{id:z},children:[{type:e,tag:S,props:{ariaHidden:R,href:"#%E9%A2%98%E7%9B%AE%E6%8C%89%E5%B9%B4%E9%BE%84%E5%B7%A5%E9%BE%84%E5%AD%A6%E5%8E%86%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84",tabIndex:-1},children:[{type:e,tag:B,props:{className:[x,b]},children:[]}]},{type:p,value:Q}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"假设有这么一份工资等级对照表，先不管它是否科学，总之有这么个对照表。"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:K}]},{type:e,tag:l,props:{},children:[{type:p,value:j}]},{type:e,tag:l,props:{},children:[{type:p,value:T}]},{type:e,tag:l,props:{},children:[{type:p,value:F}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"21~30"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:q}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:"2500"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:W}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:H}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:N}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:w}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"31~40"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:H}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:N}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:W}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:w}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"41~50"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:W}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:w}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:V}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:k}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"51~60"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:W}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:V}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:k}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:w}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:"7000"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[]},{type:e,tag:t,props:{},children:[{type:p,value:d}]},{type:e,tag:t,props:{},children:[{type:p,value:"7500"}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"以及这么一份员工名单，麻烦你算一下工资。"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"A"}]},{type:e,tag:l,props:{},children:[{type:p,value:"B"}]},{type:e,tag:l,props:{},children:[{type:p,value:"C"}]},{type:e,tag:l,props:{},children:[{type:p,value:"D"}]},{type:e,tag:l,props:{},children:[{type:p,value:"E"}]},{type:e,tag:l,props:{},children:[{type:p,value:"F"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"工号"}]},{type:e,tag:t,props:{},children:[{type:p,value:"姓名"}]},{type:e,tag:t,props:{},children:[{type:p,value:K}]},{type:e,tag:t,props:{},children:[{type:p,value:j}]},{type:e,tag:t,props:{},children:[{type:p,value:T}]},{type:e,tag:t,props:{},children:[{type:p,value:F}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW001"}]},{type:e,tag:t,props:{},children:[{type:p,value:"王菲"}]},{type:e,tag:t,props:{},children:[{type:p,value:"34"}]},{type:e,tag:t,props:{},children:[{type:p,value:"8"}]},{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW002"}]},{type:e,tag:t,props:{},children:[{type:p,value:"刘德华"}]},{type:e,tag:t,props:{},children:[{type:p,value:"59"}]},{type:e,tag:t,props:{},children:[{type:p,value:"23"}]},{type:e,tag:t,props:{},children:[{type:p,value:I}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW003"}]},{type:e,tag:t,props:{},children:[{type:p,value:"金城武"}]},{type:e,tag:t,props:{},children:[{type:p,value:"56"}]},{type:e,tag:t,props:{},children:[{type:p,value:"15"}]},{type:e,tag:t,props:{},children:[{type:p,value:D}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW004"}]},{type:e,tag:t,props:{},children:[{type:p,value:"黎明"}]},{type:e,tag:t,props:{},children:[{type:p,value:M}]},{type:e,tag:t,props:{},children:[{type:p,value:"20"}]},{type:e,tag:t,props:{},children:[{type:p,value:O}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW005"}]},{type:e,tag:t,props:{},children:[{type:p,value:"郭富城"}]},{type:e,tag:t,props:{},children:[{type:p,value:"21"}]},{type:e,tag:t,props:{},children:[{type:p,value:"0"}]},{type:e,tag:t,props:{},children:[{type:p,value:J}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW006"}]},{type:e,tag:t,props:{},children:[{type:p,value:"佘诗曼"}]},{type:e,tag:t,props:{},children:[{type:p,value:"58"}]},{type:e,tag:t,props:{},children:[{type:p,value:"24"}]},{type:e,tag:t,props:{},children:[{type:p,value:G}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW007"}]},{type:e,tag:t,props:{},children:[{type:p,value:"黄晓明"}]},{type:e,tag:t,props:{},children:[{type:p,value:"48"}]},{type:e,tag:t,props:{},children:[{type:p,value:"10"}]},{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW008"}]},{type:e,tag:t,props:{},children:[{type:p,value:"袁弘"}]},{type:e,tag:t,props:{},children:[{type:p,value:"27"}]},{type:e,tag:t,props:{},children:[{type:p,value:"7"}]},{type:e,tag:t,props:{},children:[{type:p,value:I}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW009"}]},{type:e,tag:t,props:{},children:[{type:p,value:"张歆艺"}]},{type:e,tag:t,props:{},children:[{type:p,value:"39"}]},{type:e,tag:t,props:{},children:[{type:p,value:"15"}]},{type:e,tag:t,props:{},children:[{type:p,value:D}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW010"}]},{type:e,tag:t,props:{},children:[{type:p,value:"张艺兴"}]},{type:e,tag:t,props:{},children:[{type:p,value:"22"}]},{type:e,tag:t,props:{},children:[{type:p,value:"1"}]},{type:e,tag:t,props:{},children:[{type:p,value:D}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW011"}]},{type:e,tag:t,props:{},children:[{type:p,value:"张涵予"}]},{type:e,tag:t,props:{},children:[{type:p,value:M}]},{type:e,tag:t,props:{},children:[{type:p,value:"22"}]},{type:e,tag:t,props:{},children:[{type:p,value:O}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW012"}]},{type:e,tag:t,props:{},children:[{type:p,value:"张雨绮"}]},{type:e,tag:t,props:{},children:[{type:p,value:"54"}]},{type:e,tag:t,props:{},children:[{type:p,value:"30"}]},{type:e,tag:t,props:{},children:[{type:p,value:_}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW013"}]},{type:e,tag:t,props:{},children:[{type:p,value:"刘涛"}]},{type:e,tag:t,props:{},children:[{type:p,value:"32"}]},{type:e,tag:t,props:{},children:[{type:p,value:"4"}]},{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW014"}]},{type:e,tag:t,props:{},children:[{type:p,value:"刘敏涛"}]},{type:e,tag:t,props:{},children:[{type:p,value:"28"}]},{type:e,tag:t,props:{},children:[{type:p,value:"7"}]},{type:e,tag:t,props:{},children:[{type:p,value:I}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW015"}]},{type:e,tag:t,props:{},children:[{type:p,value:"胡歌"}]},{type:e,tag:t,props:{},children:[{type:p,value:"25"}]},{type:e,tag:t,props:{},children:[{type:p,value:"1"}]},{type:e,tag:t,props:{},children:[{type:p,value:_}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW016"}]},{type:e,tag:t,props:{},children:[{type:p,value:"靳东"}]},{type:e,tag:t,props:{},children:[{type:p,value:"36"}]},{type:e,tag:t,props:{},children:[{type:p,value:"6"}]},{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW017"}]},{type:e,tag:t,props:{},children:[{type:p,value:"王凯"}]},{type:e,tag:t,props:{},children:[{type:p,value:"44"}]},{type:e,tag:t,props:{},children:[{type:p,value:"13"}]},{type:e,tag:t,props:{},children:[{type:p,value:O}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW018"}]},{type:e,tag:t,props:{},children:[{type:p,value:"刘学义"}]},{type:e,tag:t,props:{},children:[{type:p,value:"31"}]},{type:e,tag:t,props:{},children:[{type:p,value:"9"}]},{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW019"}]},{type:e,tag:t,props:{},children:[{type:p,value:"檀健次"}]},{type:e,tag:t,props:{},children:[{type:p,value:"23"}]},{type:e,tag:t,props:{},children:[{type:p,value:"0"}]},{type:e,tag:t,props:{},children:[{type:p,value:O}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW020"}]},{type:e,tag:t,props:{},children:[{type:p,value:"陆展博"}]},{type:e,tag:t,props:{},children:[{type:p,value:"46"}]},{type:e,tag:t,props:{},children:[{type:p,value:"25"}]},{type:e,tag:t,props:{},children:[{type:p,value:J}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW021"}]},{type:e,tag:t,props:{},children:[{type:p,value:"金世佳"}]},{type:e,tag:t,props:{},children:[{type:p,value:M}]},{type:e,tag:t,props:{},children:[{type:p,value:"16"}]},{type:e,tag:t,props:{},children:[{type:p,value:G}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW022"}]},{type:e,tag:t,props:{},children:[{type:p,value:"胡一菲"}]},{type:e,tag:t,props:{},children:[{type:p,value:"34"}]},{type:e,tag:t,props:{},children:[{type:p,value:"7"}]},{type:e,tag:t,props:{},children:[{type:p,value:J}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW023"}]},{type:e,tag:t,props:{},children:[{type:p,value:"张伟"}]},{type:e,tag:t,props:{},children:[{type:p,value:"60"}]},{type:e,tag:t,props:{},children:[{type:p,value:"30"}]},{type:e,tag:t,props:{},children:[{type:p,value:G}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"SCREW024"}]},{type:e,tag:t,props:{},children:[{type:p,value:"福尔康"}]},{type:e,tag:t,props:{},children:[{type:p,value:"36"}]},{type:e,tag:t,props:{},children:[{type:p,value:"16"}]},{type:e,tag:t,props:{},children:[{type:p,value:_}]},{type:e,tag:t,props:{},children:[{type:p,value:a}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"平常用VLOOKUP查找的时候，只能查找一个参数，但是这里有三个参数，而且既有数字又有文本，那么怎样才能同时查找这么多参数呢？"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"其实无法一次做到的哈，但我们可以把它分解一下，从年龄、工龄的数字变成相应的等级文本，再组合起来，变成只查找一个文本参数，这样就行了。"}]},{type:p,value:r},{type:e,tag:A,props:{id:U},children:[{type:e,tag:S,props:{ariaHidden:R,href:"#%E5%9C%A8%E7%BB%99%E5%AE%9A%E7%9A%84%E6%95%B0%E5%80%BC%E8%8C%83%E5%9B%B4%E5%86%85%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97",tabIndex:-1},children:[{type:e,tag:B,props:{className:[x,b]},children:[]}]},{type:p,value:U}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"我们先来查找年龄和工龄，此时需要手工做2个等级对照表"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"G"}]},{type:e,tag:l,props:{},children:[{type:p,value:"H"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:K}]},{type:e,tag:t,props:{},children:[{type:p,value:"年龄等级"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"21"}]},{type:e,tag:t,props:{},children:[{type:p,value:"21~30"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"31"}]},{type:e,tag:t,props:{},children:[{type:p,value:"31~40"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"41"}]},{type:e,tag:t,props:{},children:[{type:p,value:"41~50"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"51"}]},{type:e,tag:t,props:{},children:[{type:p,value:"51~60"}]}]}]}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"I"}]},{type:e,tag:l,props:{},children:[{type:p,value:"J"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"0"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"6"}]},{type:e,tag:t,props:{},children:[{type:p,value:W}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"11"}]},{type:e,tag:t,props:{},children:[{type:p,value:w}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:e,tag:"strong",props:{},children:[{type:p,value:"小贴士"}]},{type:p,value:" : VOOKUP里面查找数值范围的时候，公式里的第四个参数要为 "},{type:e,tag:g,props:{},children:[{type:p,value:"TRUE"}]},{type:p,value:"。"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"查找年龄等级的公式 "},{type:e,tag:g,props:{},children:[{type:p,value:"=VLOOKUP(C2,G:H,2,TRUE)"}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"查找工龄等级的公式 "},{type:e,tag:g,props:{},children:[{type:p,value:"=VLOOKUP(D2,I:J,2,TRUE)"}]}]},{type:p,value:r},{type:e,tag:A,props:{id:f},children:[{type:e,tag:S,props:{ariaHidden:R,href:"#%E6%9F%A5%E6%89%BE%E6%96%87%E6%9C%AC",tabIndex:-1},children:[{type:e,tag:B,props:{className:[x,b]},children:[]}]},{type:p,value:f}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"现在需要查找学历等级，我们手工做一个等级对照表"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"K"}]},{type:e,tag:l,props:{},children:[{type:p,value:"L"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:T}]},{type:e,tag:t,props:{},children:[{type:p,value:"学历等级"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:I}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:D}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:O}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:_}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:C}]},{type:e,tag:t,props:{},children:[{type:p,value:d}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:J}]},{type:e,tag:t,props:{},children:[{type:p,value:d}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:G}]},{type:e,tag:t,props:{},children:[{type:p,value:d}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:e,tag:"strong",props:{},children:[{type:p,value:"小贴士"}]},{type:p,value:" : VOOKUP里面查找文本的时候，如果不想被近似数据干扰，公式里的第四个参数要为 "},{type:e,tag:g,props:{},children:[{type:p,value:"FALSE"}]},{type:p,value:"。"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"查找学历等级的公式 "},{type:e,tag:g,props:{},children:[{type:p,value:"=VLOOKUP(E2,K:L,2,FALSE)"}]}]},{type:p,value:r},{type:e,tag:A,props:{id:L},children:[{type:e,tag:S,props:{ariaHidden:R,href:"#%E6%B7%B7%E5%90%88%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97%E5%92%8C%E6%96%87%E6%9C%AC",tabIndex:-1},children:[{type:e,tag:B,props:{className:[x,b]},children:[]}]},{type:p,value:L}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"这时候我们需要再手工做一个综合工资等级对照表。"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"先把原来的工资等级对照表里的空栏填满之后，在右边新建一个辅助列，然后在公式里用 "},{type:e,tag:g,props:{},children:[{type:p,value:"&"}]},{type:p,value:" 符号得出的组合后的文本，由于有些数字连起来之后比较难辨认，而且可能影响Excel处理，建议用符号进行分隔，比如括号。"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"A"}]},{type:e,tag:l,props:{},children:[{type:p,value:"B"}]},{type:e,tag:l,props:{},children:[{type:p,value:"C"}]},{type:e,tag:l,props:{},children:[{type:p,value:"D"}]},{type:e,tag:l,props:{},children:[{type:p,value:"E"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:K}]},{type:e,tag:t,props:{},children:[{type:p,value:j}]},{type:e,tag:t,props:{},children:[{type:p,value:T}]},{type:e,tag:t,props:{},children:[{type:p,value:F}]},{type:e,tag:t,props:{},children:[{type:p,value:"组合公式"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"20~30"}]},{type:e,tag:t,props:{},children:[{type:p,value:h}]},{type:e,tag:t,props:{},children:[{type:p,value:i}]},{type:e,tag:t,props:{},children:[{type:p,value:q}]},{type:e,tag:t,props:{},children:[{type:p,value:'="("&A2&")("&B2&")("&C2&")"'}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"然后把结果粘贴到前面的年龄和工资等级对照表之后"}]},{type:p,value:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{type:e,tag:o,props:{},children:[{type:e,tag:s,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:l,props:{},children:[{type:p,value:"M"}]},{type:e,tag:l,props:{},children:[{type:p,value:"N"}]}]}]},{type:e,tag:c,props:{},children:[{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"对照表组合"}]},{type:e,tag:t,props:{},children:[{type:p,value:F}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(0~5)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:q}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(0~5)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:"2500"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(6~10)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:H}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(6~10)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:N}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(10+)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(20~30)(10+)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(0~5)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:H}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(0~5)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:N}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(6~10)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(6~10)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(10+)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(31~40)(10+)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(0~5)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:u}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(0~5)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:v}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(6~10)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(6~10)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(10+)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:V}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(41~50)(10+)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:k}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(0~5)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:E}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(0~5)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:m}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(6~10)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:V}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(6~10)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:k}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(10+)(本科以下)"}]},{type:e,tag:t,props:{},children:[{type:p,value:"7000"}]}]},{type:e,tag:n,props:{},children:[{type:e,tag:t,props:{},children:[{type:p,value:"(51~60)(10+)(本科及以上)"}]},{type:e,tag:t,props:{},children:[{type:p,value:"7500"}]}]}]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"然后我们来写最终的计算工资的公式"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"F2 内填入的公式为"}]},{type:p,value:r},{type:e,tag:"div",props:{className:["nuxt-content-highlight"]},children:[{type:e,tag:"pre",props:{className:["language-text","line-numbers"]},children:[{type:e,tag:g,props:{},children:[{type:p,value:'=VLOOKUP("("&VLOOKUP(C2,G:H,2,TRUE)&")("&VLOOKUP(D2,I:J,2,TRUE)&")("&VLOOKUP(E2,K:L,2,FALSE)&")",M:N,2,TRUE)\n'}]}]}]},{type:p,value:r},{type:e,tag:A,props:{id:P},children:[{type:e,tag:S,props:{ariaHidden:R,href:"#%E6%9C%80%E7%BB%88%E8%A1%A8%E6%A0%BC%E9%A2%84%E8%A7%88",tabIndex:-1},children:[{type:e,tag:B,props:{className:[x,b]},children:[]}]},{type:p,value:P}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"做好的表格是这样的"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:e,tag:"img",props:{alt:"image",src:"https://user-images.githubusercontent.com/30020736/161419314-8a6d16e5-9cb5-494b-a670-3c684f318141.png"},children:[]}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"你可以先保存成Excel模板，然后把公式保存成值，再删除辅助列，另存为交给领导的最终表格，这次的任务就完成啦！"}]},{type:p,value:r},{type:e,tag:y,props:{},children:[{type:p,value:"下次再需要计算同样要求的工资表的时候，就可以直接打开Excel模板进行套用了，非常方便。"}]}]},dir:"/blog",path:"/blog/2022-04-03-vlookup-number-text-multi-parameter",extension:".md",createdAt:Y,updatedAt:Y,prev:{slug:"gintama-op-ed-recommendations",description:"花了2个月的时间看完了15年份的《银魂》动画和真人版电影，除了一些难忘的剧情之外，经常在我脑子里萦绕的就是那些独特的片头片尾曲了。",title:"推荐6首《银魂》的片头片尾主题曲"},next:{slug:"foodpanda-hk-review",description:"FoodPanda把我从自己做的黑暗料理中解救出来，这一点值得肯定，但是它需要改进的地方也不少。",title:"FoodPanda测评——能用，但不好用"}},mySlug:Z,keywords:X,myBase:"/nuxt-maupassant/"}],fetch:[{latestBlog:[{slug:"investment",title:"投什么资，不要投资"},{slug:"leetcode-01-two-sum-javascript-solution",title:"leetCode第1题Two Sum的JS解法"},{slug:"leetcode-67-add-binary-javascript-solution",title:"leetCode第67题Add Binary的JS解法"},{slug:"js-script-batch-download-img",title:"批量下载图片的浏览器JavaScript脚本"},{slug:"use-2-github-acc-on-pc",title:"在一台电脑上用两个GitHub账号"}],categories:[{name:"日常",len:14},{name:"技术",len:28},{name:"测评",len:5},{name:"推荐",len:4},{name:"剧评",len:21},{name:"时评",len:3},{name:"Lifestyle",len:1},{name:"相册",len:2},{name:"游记",len:2},{name:"Tech",len:7},{name:"Review",len:1},{name:"Commentary",len:1}],friendSites:[{href:"https://www.baidu.com",text:"百度"},{href:"https://www.google.com",text:"谷歌"},{href:"https://www.bing.com",text:"必应"},{href:"https://www.qq.com",text:"腾讯"}]}],error:null,state:{lang:{val:"Eng"}},serverRendered:!0,routePath:"/blog/vlookup-number-text-multi-parameter",content:{dbHash:"c82779c7"}}}("element","text","td","tr","\n","?","th","p","本科以下","本科及以上","table","thead","tbody","code","0~5","4000","4500","5000","5500","本科","h2","a","true","span","icon","icon-link","6~10","10+","高中","在给定的数值范围内查找数字","查找文本","混合查找数字和文本","最终表格预览","年龄","学历","工资","3000","3500","6000","6500","小学","初中","硕士","博士","大专","工龄","2000","42","vlookup-number-text-multi-parameter",Array(1),"题目按年龄工龄学历计算工资","题目:按年龄工龄学历计算工资","2022-08-05T09:26:43.645Z")</script><script src="/nuxt-maupassant/_nuxt/e56210036ee184f730c6.js" defer></script><script src="/nuxt-maupassant/_nuxt/20584c78e0a01c821a09.js" defer></script><script src="/nuxt-maupassant/_nuxt/902d179220aaae6152d7.js" defer></script><script src="/nuxt-maupassant/_nuxt/c34d538ba398a5dd917f.js" defer></script><script src="/nuxt-maupassant/_nuxt/b829557eb76e02942654.js" defer></script>
+  </body>
+</html>
