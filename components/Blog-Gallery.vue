@@ -26,6 +26,13 @@
           <span class="blog-gallery-desc">{{blog.description}}</span>
         </p>
         <div class="blog-gallery-tags">
+          <span v-for="(cat, index) in blog.categories" :key="index"
+          class="blog-cat">
+            <nuxt-link :to="'/blog/category/' + cat">
+              <i class="fa fa-folder-open" style="color:inherit;"></i>
+              {{cat}}
+            </nuxt-link>
+          </span>
           <span v-for="(tag, index) in blog.tags" :key="index"
           class="blog-tag">
             <nuxt-link :to="'/blog/tag/' + tag">
