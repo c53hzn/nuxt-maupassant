@@ -6,3 +6,4 @@ content:
   - 2021年2月，停用自建文章数据API，改用Nuxt的CMS插件“Content”，开始使用GitHub的自动部署服务Actions，每次新写了文章之后，推送上GitHub，让GitHub自动生成静态文件并部署到主站所在的代码仓库。
   - 2021年11月，参考Hexo主题Maupassant设计了Nuxt版本的主题Maupassant，发布在单独的代码仓库“nuxt-maupassant”，主站仍使用自主设计的主题。
   - 2021年12月，使用Nuxt版本2.12之后支持的async fetch方式，将主题Maupassant里的侧边栏独立成组件。
+  - 2023年7月，更新Github Actions配置文档，新增repository token。
