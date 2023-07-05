@@ -4,9 +4,93 @@
         <title>My Blog</title>
         <link>https://www.houzhenni.com/nuxt-maupassant/blog</link>
         <description>I write about technology</description>
-        <lastBuildDate>Sun, 07 Aug 2022 17:32:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Jul 2023 16:13:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[港式英语，勉强算英语吧]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-english-accent</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/hongkong-english-accent</guid>
+            <description><![CDATA[港式口音，港式语法，最熟悉的陌生语，等你来体验。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[显微镜下的大明之丝绢案]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/under-the-microscope</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/under-the-microscope</guid>
+            <description><![CDATA[《显微镜下的大明之丝绢案》看完了，感触颇深。这不光是一个案子，这是几代人的心血。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[用chatGPT学俄语]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/chatgpt-teaches-russian</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/chatgpt-teaches-russian</guid>
+            <description><![CDATA[试了一下让chatGPT解释俄语单词和句子并给我拟定学习计划，结果非常惊人。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[夏洛克·福尔摩斯和H·H·福尔摩斯：其实没什么关系]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/sherlock-holmes-and-h-h-holmes</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/sherlock-holmes-and-h-h-holmes</guid>
+            <description><![CDATA[重温神探夏洛克的时候，遇到了很多惊喜，果然经典就是应该拿出来反复观看的。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[手疼的时候想到八佰伴]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/oshin-and-yaohan</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/oshin-and-yaohan</guid>
+            <description><![CDATA[命运坎坷的阿信，和我竟然有不止一个关联点。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Mad Men 6x08, it's your job, it's also gaslighting at workplace]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/gaslighting-at-workplace</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/gaslighting-at-workplace</guid>
+            <description><![CDATA[I keep seeing a video starting with “it’s your job” everywhere, I am pissed and I have to say something.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Notion is powerful, but I still got problems]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/notion-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/notion-en</guid>
+            <description><![CDATA[I finally came across my favorite multi-device note-taking software. It's so easy to use for blog drafts and bookkeeping.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[关于“全职主妇”]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/house-wife</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/house-wife</guid>
+            <description><![CDATA[资助8年的女孩做全职主妇，你什么想法？啥时候男人都抢着当主夫了，我就赞成女人做主妇。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Notion的使用心得和遇到的问题]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/notion</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/notion</guid>
+            <description><![CDATA[终于遇到了喜欢的多端适用笔记软件，做文章草稿库和账本简直太香了。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[如何优化谷歌和必应的识图搜索结果]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/search-with-img-on-google-bing</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/search-with-img-on-google-bing</guid>
+            <description><![CDATA[想以图搜图，最好先优化你自己的图，然后再拿去搜。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[刘慈欣的世界是男女平等的吗？——看流浪地球和三体有感]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/gender-equality-in-liu-cixin-world</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/gender-equality-in-liu-cixin-world</guid>
+            <description><![CDATA[没有人会把叶文洁叫作“杨冬妈妈”，因为叶文洁就是叶文洁，她有自己的故事。我不知道刘慈欣喜不喜欢巴赫，反正我是喜欢的。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The school for good and evil--Is it possible to tell good and evil by beauty and ugliness?]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/school-for-good-and-evil-en</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/school-for-good-and-evil-en</guid>
+            <description><![CDATA[If you are in an enchanted school in fairy tales, will you become a good hero, or will you become an evil villain?]]></description>
+        </item>
+        <item>
+            <title><![CDATA[《善恶魔法学院》：美丑可以用来辨善恶吗？]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/school-for-good-and-evil</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/school-for-good-and-evil</guid>
+            <description><![CDATA[把你送进童话世界的魔法学院，你会成为善良的主人公，还是邪恶的反派？]]></description>
+        </item>
+        <item>
+            <title><![CDATA[2022年过去了]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/life-in-2022</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/life-in-2022</guid>
+            <description><![CDATA[又是乏善可陈的一年过去了。]]></description>
+        </item>
         <item>
             <title><![CDATA[投什么资，不要投资]]></title>
             <link>https://www.houzhenni.com/nuxt-maupassant/blog/investment</link>
@@ -326,16 +410,16 @@
             <description><![CDATA[我发现自己的电脑是地狱配置之后，竟然还找到了勉强能用的视频剪辑软件，真的要给万兴喵影点个赞。]]></description>
         </item>
         <item>
-            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
-            <link>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</link>
-            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</guid>
-            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
-        </item>
-        <item>
             <title><![CDATA[考据“中华四维拓扑帝国”]]></title>
             <link>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</link>
             <guid>https://www.houzhenni.com/nuxt-maupassant/blog/online-research</guid>
             <description><![CDATA[如何能快速准确地找到自己想找的内容，这是一个问题。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[高级社畜也不好过啊——《琉璃》和《秘密森林2》的观后感]]></title>
+            <link>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</link>
+            <guid>https://www.houzhenni.com/nuxt-maupassant/blog/destiny-of-shachiku</guid>
+            <description><![CDATA[作为刘学义和李浚赫的粉丝，以及昊辰/柏麟和徐东宰的角色粉，我有一点点小感想。]]></description>
         </item>
         <item>
             <title><![CDATA[小动物]]></title>
