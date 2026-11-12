@@ -1,33 +1,20 @@
-name: cd
-
-on: [push, pull_request]
-
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
 jobs:
-  cd:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
-
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - name: Checkout 🛎️
+        uses: actions/checkout@v6
 
-      - name: Setup node env
-        uses: actions/setup-node@v2.1.2
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run generate
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          node-version: ${{ matrix.node }}
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Generate
-        run: npm run generate
-          
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.API_TOKEN_GITHUB2 }}
-          publish_dir: ./dist
+          folder: .output/public # The folder the action should deploy.
