@@ -92,6 +92,11 @@ header a:active, header a:visited {
 a.nuxt-link-exact-active:hover {
 	border-bottom: none;
 }
+.nav-link .router-link-active {
+  border: 1px solid #ddd;
+  border-bottom: white;
+  box-shadow: 0px -3px 3px 0px white inset;
+}
 .container-main {
 	margin: 0px auto;
 	width: 100%;
@@ -101,6 +106,15 @@ a.nuxt-link-exact-active:hover {
 }
 a, a:visited {
 	color: inherit;
+}
+pre[class*=language-] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  background-color: #f3f3f3;
+}
+code {
+	background-color: #f3f3f3;
 }
 .align-left {
 	text-align: left;
@@ -145,7 +159,7 @@ a, a:visited {
   margin: 1px;
   padding: 0px 8px 1px 8px;
   font-size: 14px;
-  font-family: 'Noto Sans SC', sans-serif;;
+  font-family: Microsoft Yahei, sans-serif;;
   line-height: 20px;
   border-radius: 999px;
   display: inline-block;
@@ -201,6 +215,14 @@ a, a:visited {
 }
 .m-top-0 {
 	margin-top: 0px;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px 0px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 6px;
 }
 /* toTop button start */
 /* https://www.liaoxuefeng.com/article/895922498171008 */
