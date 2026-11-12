@@ -12,7 +12,7 @@ comments: true
 
 ## Preface
 
-This is a translation of my original article [用nuxt、snipcart和stripe建立一个电商网站](/blog/build-ecommerce-website-with-nuxt-snipcart-stripe).
+This is a translation of my original article [用nuxt、snipcart和stripe建立一个电商网站](/post/build-ecommerce-website-with-nuxt-snipcart-stripe).
 
 A while ago I wanted to start selling downloadable digital products, so I opened an [Etsy](https://www.etsy.com/hk-en/shop/JoyfulTemplateDesign) store that can host and sell digital products. I have created 8 listings, selling calendar templates, schedule planner templates and HTML webpage templates, etc, all designed by myself. But it seems hard to get any sale.
 

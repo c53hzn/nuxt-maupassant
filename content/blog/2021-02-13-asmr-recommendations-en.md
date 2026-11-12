@@ -12,7 +12,7 @@ comments: true
 
 ## Getting to know ASMR
 
-This is a translation of my original article [ASMR视频推荐](/blog/asmr-recommendations).
+This is a translation of my original article [ASMR视频推荐](/post/asmr-recommendations).
 
 One day I bumped into an ear cleaning video, the one receiving the service looked relaxed and comfortable, and the one performing the cleaning seemed professional and skillful, I felt like I received the same cleaning service simply by watching this video, and felt refreshed after this.
 

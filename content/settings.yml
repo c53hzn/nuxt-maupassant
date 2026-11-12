@@ -1,0 +1,47 @@
+author_name: Jenny
+site_name: Jenny's Blog
+site_description: 多学多想
+prevNextIsExcludeDate: true
+perPage: 10
+navLinks: 
+  - path: /
+    title: 首页
+    target: internal
+    fa_class: fa-home
+# fa_class: font-awesome的class名称
+  - path: /about
+    title: 关于
+    target: internal
+    fa_class: fa-user
+  - path: /history
+    title: 历史
+    target: internal
+    fa_class: fa-book
+  - path: /post
+    title: 博客
+    target: internal
+    fa_class: fa-archive
+  - path: /gallery
+    title: 相册
+    target: internal
+    fa_class: fa-image
+  - path: https://www.houzhenni.com
+    title: 主站
+    target: external
+    fa_class: fa-external-link
+friendSites:
+  - href: https://www.baidu.com
+    text: 百度
+  - href: https://www.google.com
+    text: 谷歌
+  - href: https://www.bing.com
+    text: 必应
+  - href: https://www.qq.com
+    text: 腾讯
+footer:
+  - text: Powered by Nuxt.js | Theme Maupassant
+  - text: Adapted by
+    link:
+      href: https://github.com/c53hzn
+      text: Jenny HOU
+      fa_class: fa-github

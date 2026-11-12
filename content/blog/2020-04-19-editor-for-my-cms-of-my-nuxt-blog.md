@@ -15,7 +15,7 @@ GitHub 项目地址： [https://github.com/c53hzn/april-cms](https://github.com/
 
 去年开始学习使用 `Nuxt` 的时候，看了很多关于 `Headless CMS` 的介绍，按我的理解，就是 `不带前端页面设计的内容管理系统` ，研究了一下这类的项目以及相关使用方法，自己也尝试使用了一下，但是没有坚持到底，还是想不依赖这些外部服务来构建自己的网站。不过评论系统和访客统计还是得用外部服务，因为静态网站服务器做不到这些。
 
-后来我自己写出了可以用作 `CMS` 的 `API`，可以参见 [如何使用Nuxt建立个人博客](/blog/nuxt-blog-static-website)。
+后来我自己写出了可以用作 `CMS` 的 `API`，可以参见 [如何使用Nuxt建立个人博客](/post/nuxt-blog-static-website)。
 
 这个 `API` 让我可以只需更新 `Markdown` 文章，再使用 `Nuxt` 的生成静态页面的功能就可以更新我的网站。通常我是用 `Sublime Text` 这个编辑器来编写代码的，它可以在左边显示工程文件，切换起来也挺方便的。
 
@@ -27,7 +27,7 @@ GitHub 项目地址： [https://github.com/c53hzn/april-cms](https://github.com/
 
 我觉得我能做到。
 
-写了个英文版 [Write a control panel for my API-based CMS for Nuxt](/blog/editor-for-my-cms-of-my-nuxt-blog-en)，大家随便看看就好。
+写了个英文版 [Write a control panel for my API-based CMS for Nuxt](/post/editor-for-my-cms-of-my-nuxt-blog-en)，大家随便看看就好。
 
 ## 后端需要实现的效果
 

@@ -10,7 +10,7 @@ keywords: [掟上今日子の備忘録,新垣結衣,岡田将生]
 comments: true
 ---
 
-(この文章は元の中国語の [她不记得，他不放弃--《掟上今日子的备忘录》](/blog/memorandum-of-kyoko-okitegami) を和訳されたものです。)
+(この文章は元の中国語の [她不记得，他不放弃--《掟上今日子的备忘录》](/post/memorandum-of-kyoko-okitegami) を和訳されたものです。)
 
 ## あらすじ
 

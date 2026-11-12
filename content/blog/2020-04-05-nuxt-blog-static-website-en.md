@@ -11,7 +11,7 @@ comments: true
 
 ## Preface
 
-This is a translation of my original article [如何使用Nuxt建立个人博客](/blog/nuxt-blog-static-website)
+This is a translation of my original article [如何使用Nuxt建立个人博客](/post/nuxt-blog-static-website)
 
 I used Jekyll for my website between March 17 2018 to May 5 2019, the original theme was Hydejack. From May 6 2019, I redesigned my website with Nuxt, this article will talk about the process of making this website and some points to notice.
 

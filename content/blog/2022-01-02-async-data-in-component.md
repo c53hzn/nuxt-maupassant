@@ -22,7 +22,7 @@ comments: true
 
 原主题的侧边栏分成了三个部分，文章分类、最近文章和友情链接，那么最理想的写法应该是写成 `components` ，然后放在 `layouts` 里，这样 `pages` 文件里也不需要重复引用了。
 
-此时有一个麻烦的地方是，Nuxt组件里面不能直接用 `async data` 方法加载数据，那么只能先在 `data` 里面留出位置，然后等 `mounted` 之后再往里面填数据，就跟我之前写的面包屑组件一样，参考我之前写的文章 [如何制作中英双语的面包屑导航](/blog/nuxt-breadcrumbs-bilingual) 。
+此时有一个麻烦的地方是，Nuxt组件里面不能直接用 `async data` 方法加载数据，那么只能先在 `data` 里面留出位置，然后等 `mounted` 之后再往里面填数据，就跟我之前写的面包屑组件一样，参考我之前写的文章 [如何制作中英双语的面包屑导航](/post/nuxt-breadcrumbs-bilingual) 。
 
 那么问题来了， `mounted` 里面不能用 `async await` ，那就只能回归 `promise` ，但是由于需要加载两个以上的数据，要么写成嵌套，要么写成链式，但是两个我都不喜欢，最好能有个迂回的方式，还是用 `async await` 最好。
 

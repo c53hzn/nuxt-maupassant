@@ -62,19 +62,19 @@ comments: true
 
 #### 陈伟霆
 
-![williamchan](img/blog/2020-01-31/williamchan.png)
+![williamchan](/img/blog/2020-01-31/williamchan.png)
 
 今年仍然喜欢陈伟霆，某天还单曲循环了《野狼disco》，然后在春晚上看到现场版，心里非常激动。
 
 #### 朱一龙
 
-![zhuyilong](img/blog/2020-01-31/zhuyilong.jpg)
+![zhuyilong](/img/blog/2020-01-31/zhuyilong.jpg)
 
 今年仍然喜欢朱一龙，手机和公司电脑的桌面都设置成了朱一龙，但是自己电脑还是《镇魂》的蓝头发非主流，pad还是用了好几年的《乘风破浪》电影海报，不知道为啥这两个实在舍不得丢下。
 
 #### 新欢朱元冰
 
-![zhuyuanbing](img/blog/2020-01-31/zhuyuanbing.jpg)
+![zhuyuanbing](/img/blog/2020-01-31/zhuyuanbing.jpg)
 
 作为一个三月剧粉，我的墙头名单上新增了王皓轩、宋继扬、吴磊，还有最新的朱元冰。
 

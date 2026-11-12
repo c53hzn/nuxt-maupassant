@@ -20,7 +20,7 @@ comments: true
 
 更新日期：2020-04-05
 
-新增 [英文翻译](/blog/nuxt-blog-static-website-en)，大家随便看看就可以了。
+新增 [英文翻译](/post/nuxt-blog-static-website-en)，大家随便看看就可以了。
 
 ## 关于 Nuxt
 

@@ -11,13 +11,13 @@ comments: true
 
 ## A true CMS
 
-This is a translation of my original article [给Nuxt使用的基于API的CMS——还有管理后台呢](/blog/editor-for-my-cms-of-my-nuxt-blog).
+This is a translation of my original article [给Nuxt使用的基于API的CMS——还有管理后台呢](/post/editor-for-my-cms-of-my-nuxt-blog).
 
 Github repo: [https://github.com/c53hzn/april-cms](https://github.com/c53hzn/april-cms)
 
 Last year when I started to learn `Nuxt`, I read a lot about `Headless CMS`, it can be called a `CMS without front-end page design` according to my understanding. I studied some of these projects and methods to use them, and tried to use one myself, but did not make it to the end. I still wanted to build up my website without relying on these external services. Although for comment system and visitor counter I might still be using external services as long as I'm building static website.
 
-Then I managed to write an `API` to serve as a `CMS`, you can refer to [this article](blog/nuxt-blog-static-website-en).
+Then I managed to write an `API` to serve as a `CMS`, you can refer to [this article](post/nuxt-blog-static-website-en).
 
 This `API` allows me to update my `Markdown` articles and use `Nuxt` to generate static page files, then I can push them to Github and update my website. 
 

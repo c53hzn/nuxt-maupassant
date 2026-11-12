@@ -11,7 +11,7 @@ comments: true
 
 ## Preface
 
-This is a translation of my original article [用JavaScript写一个Photoshop批处理脚本](/blog/script-for-photoshop-bulk-resize-and-watermark).
+This is a translation of my original article [用JavaScript写一个Photoshop批处理脚本](/post/script-for-photoshop-bulk-resize-and-watermark).
 
 Recently I need to add watermarks for a batch of images, I started to wonder if there are some technical methods to speed up this process after manually finished 3 images with Photoshop.
 

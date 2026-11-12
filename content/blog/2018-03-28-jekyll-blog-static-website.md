@@ -17,7 +17,7 @@ comments: true
 
 update 2020-05-21
 
-我的博客现已转用 `Nuxt.js` 生成的静态网站，可以参考 [这篇文章](/blog/nuxt-blog-static-website)。
+我的博客现已转用 `Nuxt.js` 生成的静态网站，可以参考 [这篇文章](/post/nuxt-blog-static-website)。
 
 ## 如何在Github上玩耍？
 
@@ -180,7 +180,7 @@ update 2018-05-04
 
 ## 静态博客没有自带的评论系统怎么办？
 
-看[http://cenalulu.github.io/jekyll/setup-comment-for-your-blog/](http://cenalulu.github.io/jekyll/setup-comment-for-your-blog/)
+看[http://cenalulu.github.io/jekyll/setup-comment-for-your-post/](http://cenalulu.github.io/jekyll/setup-comment-for-your-post/)
 
 ## disqus 被墙了怎么办？
 

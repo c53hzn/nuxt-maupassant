@@ -12,7 +12,7 @@ comments: true
 
 ## Preface
 
-(This is a translation of my original article [如何制作中英双语的面包屑导航](/blog/nuxt-breadcrumbs-bilingual))
+(This is a translation of my original article [如何制作中英双语的面包屑导航](/post/nuxt-breadcrumbs-bilingual))
 
 Some time ago I noticed that some websites have this "Breadcrumb Navigation", I searched for relevant data and decided that my website needs to have one too.
 
