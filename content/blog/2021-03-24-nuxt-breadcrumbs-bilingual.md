@@ -186,6 +186,6 @@ created: function() {
 
 之所以这么迟才学会这些，还是因为以前没有遇到相关需求，像这样想到哪写到哪，也不知道啥时候才能走上专业道路。
 
-最近学到的其他 Vue 知识已收录进另一篇文章 [Vue开发的注意事项](/blog/points-to-notice-for-vue-development)。 
+最近学到的其他 Vue 知识已收录进另一篇文章 [Vue开发的注意事项](/post/points-to-notice-for-vue-development)。 
 
 全文完。

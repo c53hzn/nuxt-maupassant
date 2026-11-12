@@ -26,7 +26,7 @@ comments: true
 
 原著《如何错误地套路一个魔教教主》应该算是短篇，笑点十分密集，但是电视剧进行了魔改，拍得像是同人剧一样。
 
-专门的剧评见这里 [沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感](/blog/the-birth-of-the-drama-king)。
+专门的剧评见这里 [沙雕小说沙雕剧，拆我CP虐我心——《少年江湖物语》观后感](/post/the-birth-of-the-drama-king)。
 
 #### 沙海
 
@@ -54,7 +54,7 @@ comments: true
 
 #### 端脑
 
-专门写了长一点的剧评 [专门安利一下《端脑》](/blog/tv-drama-die-now)。
+专门写了长一点的剧评 [专门安利一下《端脑》](/post/tv-drama-die-now)。
 
 ### 追星
 

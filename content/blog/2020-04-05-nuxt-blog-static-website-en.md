@@ -170,7 +170,7 @@ asdf
 
 With this API, I transformed Markdown contents into HTML, this will reduce the size of the static website generated.
 
-For the core codes of API, you can refer to [Write a control panel for my API-based CMS for Nuxt](/blog/editor-for-my-cms-of-my-nuxt-blog-en).
+For the core codes of API, you can refer to [Write a control panel for my API-based CMS for Nuxt](/post/editor-for-my-cms-of-my-nuxt-blog-en).
 
 ## Retrieve data from API and render it to webpage
 

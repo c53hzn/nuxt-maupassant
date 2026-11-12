@@ -9,7 +9,7 @@ tags: [Feminism,Harry Potter]
 comments: true
 ---
 
-This is a translation of my original article [女性失权，从名字始——罗琳事件有感](/blog/stand-with-rowling)
+This is a translation of my original article [女性失权，从名字始——罗琳事件有感](/post/stand-with-rowling)
 
 Today I am an "angry person who is menstruating", and I am going to share my anger here.
 

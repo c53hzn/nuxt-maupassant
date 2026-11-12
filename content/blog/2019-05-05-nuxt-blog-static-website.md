@@ -168,9 +168,9 @@ asdf
 
 ### 根据参数读取并返回数据
 
-这个 api 可以把读取的 Markdown 内容转化成了 HTML，这样可以减轻最后生成的网站文件大小，原因可见 [如何减轻Nuxt打包生成的代码量](/blog/lighten-nuxt-website)。
+这个 api 可以把读取的 Markdown 内容转化成了 HTML，这样可以减轻最后生成的网站文件大小，原因可见 [如何减轻Nuxt打包生成的代码量](/post/lighten-nuxt-website)。
 
-`API` 的重点写法可以参考 [给Nuxt使用的基于API的CMS——还有管理后台呢](/blog/editor-for-my-cms-of-my-nuxt-blog)。
+`API` 的重点写法可以参考 [给Nuxt使用的基于API的CMS——还有管理后台呢](/post/editor-for-my-cms-of-my-nuxt-blog)。
 
 ## 从 API 读取数据并渲染到页面
 

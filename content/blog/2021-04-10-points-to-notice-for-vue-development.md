@@ -132,7 +132,7 @@ methods: {
 
 ## 总结及其他
 
-关于 Vue 开发中的兄弟组件通信的问题，另有一篇写 Nuxt 面包屑导航的文章 [如何制作中英双语的面包屑导航](/blog/nuxt-breadcrumbs-bilingual)。
+关于 Vue 开发中的兄弟组件通信的问题，另有一篇写 Nuxt 面包屑导航的文章 [如何制作中英双语的面包屑导航](/post/nuxt-breadcrumbs-bilingual)。
 
 另外，以上四个问题的答案出自这四个页面
 

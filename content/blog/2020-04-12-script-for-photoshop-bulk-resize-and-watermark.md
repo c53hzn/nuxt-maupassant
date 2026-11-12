@@ -24,7 +24,7 @@ comments: true
 
 这不是巧了嘛！天下脚本千千万，JavaScript南波湾！那我们就开始抄，哦不，开始学吧！
 
-新增英文版 [Write a JavaScript script for Photoshop image batch processing](/blog/script-for-photoshop-bulk-resize-and-watermark-en)，大家随便看看就可以了。
+新增英文版 [Write a JavaScript script for Photoshop image batch processing](/post/script-for-photoshop-bulk-resize-and-watermark-en)，大家随便看看就可以了。
 
 ## 网上搜到可参考的 JavaScript 脚本
 
