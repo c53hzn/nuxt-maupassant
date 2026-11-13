@@ -13,12 +13,20 @@
       </div>
     </div>
     <h2>{{currYear}}年</h2>
-    <div class="pic-month-unit" v-for="[month, picURLs] in picByMonth">
-      <div class="month">{{month}}月</div>
+    <div
+      class="pic-month-unit"
+      v-for="[month, picURLs] in picByMonth"
+      :key="`${currYear}-${month}`"
+    >
+      <div class="month">{{ month }}月</div>
       <div class="pic-container-outer">
         <div class="pic-container-inner">
-          <div class="col-4" v-for="(url) in picURLs">
-            <img :src="url" loading="lazy">
+          <div
+            class="col-4"
+            v-for="(url, urlIndex) in picURLs"
+            :key="urlIndex"
+          >
+            <img :src="resolveSrc(url)" loading="lazy">
           </div>
         </div>
       </div>
@@ -30,6 +38,15 @@
 </template>
 
 <script setup>
+import { joinURL } from 'ufo'
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL;
+
+const isExternal = (url) => /^(https?:)?\/\//i.test(url)
+
+const resolveSrc = (url) =>
+  isExternal(url) ? url : joinURL(baseURL, url)
+
 const { data } = await useFetch('/api/blog-images', {
   query: { excludeGif: true } // 参数可以自由传递
 })
