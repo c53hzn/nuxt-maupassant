@@ -114,7 +114,7 @@ definePageMeta( {
 useSeoMeta({
   title: () => `${author_name}:${blog.title}`,
   date: () => blog.meta.date,
-  description: () => blog.description,
+  description: () => blog.description+"。分类:"+blog.categories.join(",")+"。标签"+blog.tags.join(","),
 })
 </script>
 

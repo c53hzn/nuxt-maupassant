@@ -100,7 +100,7 @@ const resolveSrc = (url) =>
   isExternal(url) ? url : joinURL(baseURL, url)
 
 const route = useRoute()
-const currYear = computed(() => parseInt(route.params.gallery) || 1);
+const currYear = computed(() => parseInt(route.params.year) || 1);
 const myYear = currYear.value;
 
 const { data } = await useFetch('/api/blog-images', {
